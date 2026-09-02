@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "30 5 * * *"
+    - cron: "30 8 * * *"
+      timezone: "Europe/Istanbul"
 
 permissions:
   contents: write
@@ -36,7 +37,7 @@ jobs:
           git add data/
 
           if git diff --cached --quiet; then
-            echo "Yeni veri yok."
+            echo "Yeni Lighthouse verisi yok."
           else
             git commit -m "chore: update lighthouse results"
             git push
