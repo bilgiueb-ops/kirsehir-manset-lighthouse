@@ -1,0 +1,15 @@
+{
+  "name": "kirsehir-manset-lighthouse",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "audit": "node scripts/run-lighthouse.mjs"
+  },
+  "dependencies": {
+    "lighthouse": "13.4.1"
+  }
+}
