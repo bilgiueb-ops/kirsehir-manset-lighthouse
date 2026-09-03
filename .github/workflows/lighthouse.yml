@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "30 8 * * *"
+    - cron: "17 8 * * *"
       timezone: "Europe/Istanbul"
 
 permissions:
@@ -14,6 +14,12 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
 
+    env:
+      SITE_URL: https://kirsehirmanset.com/
+      MAX_URLS: "10"
+      TARGET_FEED_URL: ${{ secrets.TARGET_FEED_URL }}
+      TARGET_FEED_KEY: ${{ secrets.TARGET_FEED_KEY }}
+
     steps:
       - name: Repository checkout
         uses: actions/checkout@v4
@@ -22,6 +28,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Check configuration
+        run: |
+          if [ -z "$TARGET_FEED_URL" ]; then
+            echo "ERROR: TARGET_FEED_URL boş."
+            exit 1
+          fi
+
+          if [ -z "$TARGET_FEED_KEY" ]; then
+            echo "ERROR: TARGET_FEED_KEY boş."
+            exit 1
+          fi
+
+          echo "TARGET_FEED_URL tanimli."
+          echo "TARGET_FEED_KEY tanimli."
 
       - name: Install dependencies
         run: npm install
