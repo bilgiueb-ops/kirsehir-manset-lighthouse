@@ -7,28 +7,236 @@ const SITE_URL =
   "https://kirsehirmanset.com/";
 
 const MAX_URLS =
-  Number(process.env.MAX_URLS || 6);
+  Number(process.env.MAX_URLS || 10);
+
+const TARGET_FEED_URL =
+  process.env.TARGET_FEED_URL ||
+  "";
+
+const TARGET_FEED_KEY =
+  process.env.TARGET_FEED_KEY ||
+  "";
 
 const DATA_DIR =
   path.resolve("data");
 
 const REPORT_DIR =
-  path.join(DATA_DIR, "reports");
+  path.join(
+    DATA_DIR,
+    "reports"
+  );
 
-await fs.mkdir(REPORT_DIR, {
-  recursive: true
-});
+await fs.mkdir(
+  REPORT_DIR,
+  {
+    recursive: true
+  }
+);
 
 
-async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: {
-      "user-agent":
-        "KirsehirManset-Lighthouse/1.0"
-    }
-  });
+/* =========================================================
+   YARDIMCI
+   ========================================================= */
 
-  if (!response.ok) {
+function cleanUrl(url) {
+  return String(
+    url || ""
+  )
+    .trim()
+    .replace(
+      /#.*$/,
+      ""
+    );
+}
+
+
+function sameHost(a, b) {
+  try {
+    const hostA =
+      new URL(a)
+        .hostname
+        .replace(
+          /^www\./,
+          ""
+        )
+        .toLowerCase();
+
+    const hostB =
+      new URL(b)
+        .hostname
+        .replace(
+          /^www\./,
+          ""
+        )
+        .toLowerCase();
+
+    return hostA === hostB;
+
+  } catch {
+    return false;
+  }
+}
+
+
+/* =========================================================
+   APPS SCRIPT'TEN HEDEF URLLERİ AL
+   ========================================================= */
+
+async function getTargetUrls() {
+  if (
+    !TARGET_FEED_URL ||
+    !TARGET_FEED_KEY
+  ) {
+    console.log(
+      "TARGET_FEED_URL veya TARGET_FEED_KEY yok."
+    );
+
+    return [];
+  }
+
+  const separator =
+    TARGET_FEED_URL.includes("?")
+      ? "&"
+      : "?";
+
+  const feedUrl =
+    TARGET_FEED_URL +
+    separator +
+    "key=" +
+    encodeURIComponent(
+      TARGET_FEED_KEY
+    );
+
+  console.log(
+    "Search Console hedef feed okunuyor..."
+  );
+
+  const response =
+    await fetch(
+      feedUrl,
+      {
+        method: "GET",
+
+        redirect: "follow",
+
+        headers: {
+          "User-Agent":
+            "KirsehirManset-Lighthouse/5.0",
+          "Accept":
+            "application/json"
+        }
+      }
+    );
+
+  const text =
+    await response.text();
+
+  console.log(
+    "Feed HTTP:",
+    response.status
+  );
+
+  if (
+    !response.ok
+  ) {
+    throw new Error(
+      "Target feed HTTP " +
+      response.status +
+      ": " +
+      text.slice(
+        0,
+        1000
+      )
+    );
+  }
+
+  let data;
+
+  try {
+    data =
+      JSON.parse(
+        text
+      );
+
+  } catch {
+    throw new Error(
+      "Target feed JSON döndürmedi. İlk cevap: " +
+      text.slice(
+        0,
+        1000
+      )
+    );
+  }
+
+  if (
+    data.error
+  ) {
+    throw new Error(
+      "Target feed hatası: " +
+      JSON.stringify(
+        data.error
+      )
+    );
+  }
+
+  const urls =
+    Array.isArray(
+      data.urls
+    )
+      ? data.urls
+      : [];
+
+  const cleaned =
+    urls
+      .map(
+        cleanUrl
+      )
+      .filter(
+        url =>
+          url &&
+          sameHost(
+            url,
+            SITE_URL
+          )
+      );
+
+  const unique =
+    [
+      ...new Set(
+        cleaned
+      )
+    ];
+
+  console.log(
+    "Feed URL sayısı:",
+    unique.length
+  );
+
+  return unique;
+}
+
+
+/* =========================================================
+   FALLBACK SITEMAP
+   ========================================================= */
+
+async function fetchText(
+  url
+) {
+  const response =
+    await fetch(
+      url,
+      {
+        headers: {
+          "User-Agent":
+            "KirsehirManset-Lighthouse/5.0"
+        }
+      }
+    );
+
+  if (
+    !response.ok
+  ) {
     throw new Error(
       `HTTP ${response.status}: ${url}`
     );
@@ -38,37 +246,11 @@ async function fetchText(url) {
 }
 
 
-function cleanUrl(url) {
-  return String(url || "")
-    .trim()
-    .replace(/#.*$/, "");
-}
-
-
-function sameHost(a, b) {
-  try {
-    const hostA =
-      new URL(a)
-        .hostname
-        .replace(/^www\./, "")
-        .toLowerCase();
-
-    const hostB =
-      new URL(b)
-        .hostname
-        .replace(/^www\./, "")
-        .toLowerCase();
-
-    return hostA === hostB;
-  } catch {
-    return false;
-  }
-}
-
-
-async function getSitemapUrls(siteUrl) {
+async function getSitemapUrls() {
   const base =
-    new URL(siteUrl);
+    new URL(
+      SITE_URL
+    );
 
   const candidates = [
     new URL(
@@ -103,10 +285,14 @@ async function getSitemapUrls(siteUrl) {
 
     for (
       const line of
-      robots.split(/\r?\n/)
+      robots.split(
+        /\r?\n/
+      )
     ) {
       if (
-        /^sitemap:\s*/i.test(line)
+        /^sitemap:\s*/i.test(
+          line
+        )
       ) {
         candidates.unshift(
           line
@@ -118,9 +304,10 @@ async function getSitemapUrls(siteUrl) {
         );
       }
     }
+
   } catch {
     console.log(
-      "robots.txt okunamadi, standart sitemap yollar kullaniliyor."
+      "robots.txt okunamadı."
     );
   }
 
@@ -137,7 +324,9 @@ async function getSitemapUrls(siteUrl) {
   ) {
     if (
       depth > 3 ||
-      processed.has(sitemapUrl)
+      processed.has(
+        sitemapUrl
+      )
     ) {
       return;
     }
@@ -153,28 +342,30 @@ async function getSitemapUrls(siteUrl) {
         await fetchText(
           sitemapUrl
         );
+
     } catch {
       return;
     }
 
-    const locations =
-      [
-        ...xml.matchAll(
-          /<loc>\s*([^<]+)\s*<\/loc>/gi
+    const locations = [
+      ...xml.matchAll(
+        /<loc>\s*([^<]+)\s*<\/loc>/gi
+      )
+    ].map(
+      match =>
+        cleanUrl(
+          match[1]
         )
-      ].map(
-        match =>
-          cleanUrl(
-            match[1]
-          )
-      );
+    );
 
     const isIndex =
       /<sitemapindex\b/i.test(
         xml
       );
 
-    if (isIndex) {
+    if (
+      isIndex
+    ) {
       for (
         const location of
         locations
@@ -182,7 +373,7 @@ async function getSitemapUrls(siteUrl) {
         if (
           sameHost(
             location,
-            siteUrl
+            SITE_URL
           )
         ) {
           await readSitemap(
@@ -202,7 +393,7 @@ async function getSitemapUrls(siteUrl) {
       if (
         sameHost(
           location,
-          siteUrl
+          SITE_URL
         )
       ) {
         urls.add(
@@ -215,7 +406,11 @@ async function getSitemapUrls(siteUrl) {
 
   for (
     const candidate of
-    [...new Set(candidates)]
+    [
+      ...new Set(
+        candidates
+      )
+    ]
   ) {
     await readSitemap(
       candidate
@@ -227,6 +422,84 @@ async function getSitemapUrls(siteUrl) {
   ];
 }
 
+
+/* =========================================================
+   URL SEÇİM MOTORU
+   ========================================================= */
+
+async function getAuditUrls() {
+  let urls = [];
+
+  try {
+    urls =
+      await getTargetUrls();
+
+  } catch (error) {
+    console.error(
+      "Search Console feed alınamadı:"
+    );
+
+    console.error(
+      error.message
+    );
+  }
+
+
+  /*
+   * Search Console feed başarılıysa
+   * sitemap'e dönmeye gerek yok.
+   */
+
+  if (
+    urls.length
+  ) {
+    return [
+      cleanUrl(
+        SITE_URL
+      ),
+      ...urls.filter(
+        url =>
+          cleanUrl(url) !==
+          cleanUrl(SITE_URL)
+      )
+    ].slice(
+      0,
+      MAX_URLS
+    );
+  }
+
+
+  /*
+   * Feed çalışmazsa fallback olarak sitemap
+   * kullanılır.
+   */
+
+  console.log(
+    "Feed boş. Sitemap fallback devrede."
+  );
+
+  const sitemap =
+    await getSitemapUrls();
+
+  return [
+    cleanUrl(
+      SITE_URL
+    ),
+    ...sitemap.filter(
+      url =>
+        cleanUrl(url) !==
+        cleanUrl(SITE_URL)
+    )
+  ].slice(
+    0,
+    MAX_URLS
+  );
+}
+
+
+/* =========================================================
+   LIGHTHOUSE
+   ========================================================= */
 
 function runLighthouse(
   url,
@@ -275,6 +548,129 @@ function runLighthouse(
 }
 
 
+/* =========================================================
+   AUDIT
+   ========================================================= */
+
+function getAudit(
+  audits,
+  id
+) {
+  return (
+    audits[id] || {
+      score: null,
+      displayValue: "",
+      numericValue: null,
+      details: null
+    }
+  );
+}
+
+
+function getLcpElement(
+  audits
+) {
+  const audit =
+    getAudit(
+      audits,
+      "largest-contentful-paint-element"
+    );
+
+  try {
+    const items =
+      audit.details?.items ||
+      [];
+
+    if (
+      items.length
+    ) {
+      return (
+        items[0].node?.snippet ||
+        items[0].node?.selector ||
+        items[0].node?.nodeLabel ||
+        ""
+      );
+    }
+
+  } catch {}
+
+  return "";
+}
+
+
+function getFailedAudits(
+  report
+) {
+  const audits =
+    report.audits ||
+    {};
+
+  const failed = [];
+
+  for (
+    const [
+      id,
+      audit
+    ] of
+    Object.entries(
+      audits
+    )
+  ) {
+    if (
+      !audit ||
+      audit.scoreDisplayMode ===
+        "informative" ||
+      audit.scoreDisplayMode ===
+        "manual" ||
+      audit.scoreDisplayMode ===
+        "notApplicable"
+    ) {
+      continue;
+    }
+
+    if (
+      typeof audit.score ===
+        "number" &&
+      audit.score < 0.9
+    ) {
+      failed.push({
+        id,
+
+        title:
+          audit.title ||
+          id,
+
+        score:
+          audit.score,
+
+        displayValue:
+          audit.displayValue ||
+          ""
+      });
+    }
+  }
+
+
+  failed.sort(
+    (
+      a,
+      b
+    ) =>
+      a.score -
+      b.score
+  );
+
+  return failed.slice(
+    0,
+    20
+  );
+}
+
+
+/* =========================================================
+   SONUÇ ÇIKAR
+   ========================================================= */
+
 function extractSummary(
   report,
   mode,
@@ -310,19 +706,27 @@ function extractSummary(
   }
 
 
-  function numeric(id) {
+  function numeric(
+    id
+  ) {
     return (
-      audits[id]
-        ?.numericValue ??
+      getAudit(
+        audits,
+        id
+      ).numericValue ??
       null
     );
   }
 
 
-  function display(id) {
+  function display(
+    id
+  ) {
     return (
-      audits[id]
-        ?.displayValue ||
+      getAudit(
+        audits,
+        id
+      ).displayValue ||
       ""
     );
   }
@@ -332,6 +736,10 @@ function extractSummary(
     url,
 
     mode,
+
+    lighthouseVersion:
+      report.lighthouseVersion ||
+      "",
 
     fetchedAt:
       report.fetchTime ||
@@ -425,13 +833,38 @@ function extractSummary(
         display(
           "server-response-time"
         )
-    }
+    },
+
+    lcpElement:
+      getLcpElement(
+        audits
+      ),
+
+    failedAudits:
+      getFailedAudits(
+        report
+      )
   };
 }
 
 
+/* =========================================================
+   DOSYA OLUŞTUR
+   ========================================================= */
+
+const urls =
+  await getAuditUrls();
+
 console.log(
-  "Kirsehir Manset Lighthouse basliyor..."
+  "\n========================================"
+);
+
+console.log(
+  "KIRŞEHİR MANŞET LIGHTHOUSE 5.0"
+);
+
+console.log(
+  "========================================"
 );
 
 console.log(
@@ -439,46 +872,35 @@ console.log(
   SITE_URL
 );
 
-
-const sitemap =
-  await getSitemapUrls(
-    SITE_URL
-  );
-
-
-const selectedUrls = [
-  cleanUrl(
-    SITE_URL
-  ),
-
-  ...sitemap.filter(
-    url =>
-      cleanUrl(url) !==
-      cleanUrl(SITE_URL)
-  )
-].slice(
-  0,
-  MAX_URLS
-);
-
-
 console.log(
-  "Taranacak URL sayisi:",
-  selectedUrls.length
+  "URL sayısı:",
+  urls.length
 );
 
 
-const results = [];
-const errors = [];
+if (
+  !urls.length
+) {
+  throw new Error(
+    "Taranacak URL bulunamadı."
+  );
+}
+
+
+const results =
+  [];
+
+const errors =
+  [];
 
 
 for (
   let i = 0;
-  i < selectedUrls.length;
+  i < urls.length;
   i++
 ) {
   const url =
-    selectedUrls[i];
+    urls[i];
 
 
   for (
@@ -488,20 +910,32 @@ for (
       "desktop"
     ]
   ) {
-    const filename =
-      `${String(i + 1).padStart(2, "0")}-${mode}.json`;
+    const fileName =
+      `${String(
+        i + 1
+      ).padStart(
+        2,
+        "0"
+      )}-${mode}.json`;
+
 
     const outputPath =
       path.join(
         REPORT_DIR,
-        filename
+        fileName
       );
 
 
     try {
       console.log(
-        `Lighthouse ${mode}: ${url}`
+        `\n[${i + 1}/${urls.length}]`
       );
+
+      console.log(
+        mode.toUpperCase(),
+        url
+      );
+
 
       runLighthouse(
         url,
@@ -532,14 +966,14 @@ for (
       );
 
 
-    } catch (error) {
+    } catch (
+      error
+    ) {
       console.error(
-        `HATA ${mode}: ${url}`
+        "Lighthouse hatası:",
+        error.message
       );
 
-      console.error(
-        error
-      );
 
       errors.push({
         url,
@@ -555,8 +989,12 @@ for (
 }
 
 
+/* =========================================================
+   LATEST JSON
+   ========================================================= */
+
 const payload = {
-  version: 1,
+  version: 5,
 
   site:
     SITE_URL,
@@ -568,7 +1006,7 @@ const payload = {
     MAX_URLS,
 
   urlsAudited:
-    selectedUrls,
+    urls,
 
   results,
 
@@ -590,13 +1028,17 @@ await fs.writeFile(
 );
 
 
+/* =========================================================
+   LATEST MARKDOWN
+   ========================================================= */
+
 const markdown = [
-  "# Kirsehir Manset Lighthouse",
+  "# Kırşehir Manşet Lighthouse",
   "",
   `Site: ${SITE_URL}`,
   `Tarih: ${payload.generatedAt}`,
-  `Taranan URL: ${selectedUrls.length}`,
-  `Basarili test: ${results.length}`,
+  `Taranan URL: ${urls.length}`,
+  `Başarılı test: ${results.length}`,
   `Hata: ${errors.length}`,
   ""
 ];
@@ -608,18 +1050,32 @@ for (
 ) {
   markdown.push(
     [
-      `- ${result.mode.toUpperCase()}`,
+      result.mode.toUpperCase(),
+
       result.url,
+
       `Performance: ${result.scores.performance}`,
+
       `SEO: ${result.scores.seo}`,
+
       `Accessibility: ${result.scores.accessibility}`,
+
       `Best Practices: ${result.scores.bestPractices}`,
+
       `LCP: ${result.displayMetrics.lcp}`,
+
       `CLS: ${result.displayMetrics.cls}`,
+
       `TBT: ${result.displayMetrics.tbt}`,
+
       `FCP: ${result.displayMetrics.fcp}`,
-      `TTFB: ${result.displayMetrics.ttfb}`
-    ].join(" | ")
+
+      `TTFB: ${result.displayMetrics.ttfb}`,
+
+      `LCP Element: ${result.lcpElement}`
+    ].join(
+      " | "
+    )
   );
 }
 
@@ -637,7 +1093,13 @@ if (
     errors
   ) {
     markdown.push(
-      `- ${error.mode} | ${error.url} | ${error.error}`
+      [
+        error.mode,
+        error.url,
+        error.error
+      ].join(
+        " | "
+      )
     );
   }
 }
@@ -649,20 +1111,30 @@ await fs.writeFile(
     "latest.md"
   ),
 
-  markdown.join("\n")
+  markdown.join(
+    "\n"
+  )
 );
 
 
 console.log(
-  "Lighthouse islemi tamamlandi."
+  "\n========================================"
 );
 
 console.log(
-  "Basarili test:",
+  "LIGHTHOUSE TAMAMLANDI"
+);
+
+console.log(
+  "Başarılı:",
   results.length
 );
 
 console.log(
   "Hata:",
   errors.length
+);
+
+console.log(
+  "========================================"
 );
