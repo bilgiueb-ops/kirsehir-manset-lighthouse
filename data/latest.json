@@ -1,21 +1,26 @@
 {
-  "version": 1,
+  "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-09-03T05:55:25.323Z",
-  "maxUrls": 6,
+  "generatedAt": "2026-09-03T10:32:29.203Z",
+  "maxUrls": 10,
   "urlsAudited": [
     "https://kirsehirmanset.com/",
-    "https://kirsehirmanset.com/haber/hasar-takip-firsatcilarina-kirmizi-kart-alo-193-resmen-faaliyete-basladi-764a9",
-    "https://kirsehirmanset.com/haber/kaman-bilim-sanat-merkezi-ve-ticaret-meslek-lisesi-yeni-doneme-hazirlaniyor-2ccf6",
-    "https://kirsehirmanset.com/haber/tugba-isik-ercan-kadinlarimizin-potansiyelini-gelecek-vizyonuna-donusturecegiz-5f08e",
-    "https://kirsehirmanset.com/haber/marmarada-can-pazari-alsu-ve-tugberk-imamoglu-gemileri-carpisti-a2684",
-    "https://kirsehirmanset.com/haber/suleyman-soylu-ozgur-ozele-actigi-tazminat-davasini-kazandi-09fa1"
+    "https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd",
+    "https://kirsehirmanset.com/haber/devlet-bahceliden-ibb-iddianamesi-aciklamasi-yargilama-televizyonlardan-canli-yayinlanmalidir-34771",
+    "https://kirsehirmanset.com/haber/marmara-denizinde-carpisan-gemilere-iliskin-sorusturma-adliyeye-sevk-durumu-bilirkisi-raporuyla-netlesecek-5f016",
+    "https://kirsehirmanset.com/haber/arifan-kulliyesi-vakfinin-yeni-projesinde-temeller-atildi-bilal-erdogan-ve-bakan-ciftci-sivastaydi-0aabe",
+    "https://kirsehirmanset.com/haber/2026-2027-motosiklet-eylem-plani-yururlukte-kirsehirde-kontroller-genisletilecek-12111",
+    "https://kirsehirmanset.com/haber/enflasyonda-dusus-trendi-suruyor-agustos-ayi-tufe-verileri-belli-oldu-949ef",
+    "https://kirsehirmanset.com/haber/icapp-9-kadin-kollari-toplantisi-istanbulda-gerceklestirildi-90d1e",
+    "https://kirsehirmanset.com/haber/suleyman-soyludan-bayburtta-anlamli-ziyaret-kenan-yavuz-etnografya-muzesini-gezdi-deaff",
+    "https://kirsehirmanset.com/haber/icisleri-bakani-mustafa-ciftci-tusastaki-teslimat-toreninde-konustu-gok-vatandaki-gucumuz-artiyor-0d608"
   ],
   "results": [
     {
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
-      "fetchedAt": "2026-09-03T05:52:04.936Z",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-09-03T10:29:20.347Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
         "performance": 51,
@@ -24,330 +29,388 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 2526.034,
-        "lcp": 13026.6045,
-        "cls": 0.08798292219694988,
-        "tbt": 638.5,
-        "speedIndex": 4379.9047999712,
-        "ttfb": 258
+        "fcp": 3105.9335,
+        "lcp": 9830.247500000001,
+        "cls": 0.08584751147808782,
+        "tbt": 601.5000000000009,
+        "speedIndex": 4041.3388491075802,
+        "ttfb": 222
       },
       "displayMetrics": {
-        "fcp": "2.5 s",
-        "lcp": "13.0 s",
-        "cls": "0.088",
-        "tbt": "640 ms",
-        "speedIndex": "4.4 s",
-        "ttfb": "Root document took 260 ms"
-      }
+        "fcp": "3.1 s",
+        "lcp": "9.8 s",
+        "cls": "0.086",
+        "tbt": "600 ms",
+        "speedIndex": "4.0 s",
+        "ttfb": "Root document took 220 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0,
+          "displayValue": "9.8 s"
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "4.4 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 61 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 247 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 2,161 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,750 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.11,
+          "displayValue": "13.4 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.26,
+          "displayValue": "350 ms"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.46,
+          "displayValue": "3.1 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.49,
+          "displayValue": "600 ms"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        }
+      ]
     },
     {
       "url": "https://kirsehirmanset.com/",
       "mode": "desktop",
-      "fetchedAt": "2026-09-03T05:52:23.343Z",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-09-03T10:29:38.128Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 72,
+        "performance": 75,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1760.4509999999998,
-        "lcp": 3339.010757385254,
-        "cls": 0.00034709955700246793,
-        "tbt": 9,
-        "speedIndex": 1993.0694627917042,
-        "ttfb": 235
+        "fcp": 1832.9460000000001,
+        "lcp": 2778.4980000000005,
+        "cls": 0.00047870669074605814,
+        "tbt": 3,
+        "speedIndex": 1832.9460000000001,
+        "ttfb": 232
       },
       "displayMetrics": {
         "fcp": "1.8 s",
-        "lcp": "3.3 s",
+        "lcp": "2.8 s",
         "cls": "0",
-        "tbt": "10 ms",
-        "speedIndex": "2.0 s",
-        "ttfb": "Root document took 240 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/hasar-takip-firsatcilarina-kirmizi-kart-alo-193-resmen-faaliyete-basladi-764a9",
-      "mode": "mobile",
-      "fetchedAt": "2026-09-03T05:52:41.237Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/hasar-takip-firsatcilarina-kirmizi-kart-alo-193-resmen-faaliyete-basladi-764a9",
-      "scores": {
-        "performance": 73,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3113.5975,
-        "lcp": 3701.191999999999,
-        "cls": 0.09982383076801232,
-        "tbt": 291.5,
-        "speedIndex": 4272.004256092095,
-        "ttfb": 601
-      },
-      "displayMetrics": {
-        "fcp": "3.1 s",
-        "lcp": "3.7 s",
-        "cls": "0.1",
-        "tbt": "290 ms",
-        "speedIndex": "4.3 s",
-        "ttfb": "Root document took 600 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/hasar-takip-firsatcilarina-kirmizi-kart-alo-193-resmen-faaliyete-basladi-764a9",
-      "mode": "desktop",
-      "fetchedAt": "2026-09-03T05:52:59.195Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/hasar-takip-firsatcilarina-kirmizi-kart-alo-193-resmen-faaliyete-basladi-764a9",
-      "scores": {
-        "performance": 79,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1447.245,
-        "lcp": 2744.6940000000004,
-        "cls": 0.04838513782526802,
-        "tbt": 2,
-        "speedIndex": 1481.0451375930518,
-        "ttfb": 227
-      },
-      "displayMetrics": {
-        "fcp": "1.4 s",
-        "lcp": "2.7 s",
-        "cls": "0.048",
         "tbt": "0 ms",
-        "speedIndex": "1.5 s",
+        "speedIndex": "1.8 s",
         "ttfb": "Root document took 230 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kaman-bilim-sanat-merkezi-ve-ticaret-meslek-lisesi-yeni-doneme-hazirlaniyor-2ccf6",
-      "mode": "mobile",
-      "fetchedAt": "2026-09-03T05:53:15.751Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kaman-bilim-sanat-merkezi-ve-ticaret-meslek-lisesi-yeni-doneme-hazirlaniyor-2ccf6",
-      "scores": {
-        "performance": 70,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
       },
-      "metrics": {
-        "fcp": 3716.8035,
-        "lcp": 4289.7205,
-        "cls": 0.11583161785195398,
-        "tbt": 214.5,
-        "speedIndex": 3716.8035,
-        "ttfb": 229
-      },
-      "displayMetrics": {
-        "fcp": "3.7 s",
-        "lcp": "4.3 s",
-        "cls": "0.116",
-        "tbt": "210 ms",
-        "speedIndex": "3.7 s",
-        "ttfb": "Root document took 230 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kaman-bilim-sanat-merkezi-ve-ticaret-meslek-lisesi-yeni-doneme-hazirlaniyor-2ccf6",
-      "mode": "desktop",
-      "fetchedAt": "2026-09-03T05:53:32.502Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kaman-bilim-sanat-merkezi-ve-ticaret-meslek-lisesi-yeni-doneme-hazirlaniyor-2ccf6",
-      "scores": {
-        "performance": 82,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1486.5919999999996,
-        "lcp": 2233.820999999999,
-        "cls": 0.04815708152506593,
-        "tbt": 4,
-        "speedIndex": 1519.8261160056552,
-        "ttfb": 234
-      },
-      "displayMetrics": {
-        "fcp": "1.5 s",
-        "lcp": "2.2 s",
-        "cls": "0.048",
-        "tbt": "0 ms",
-        "speedIndex": "1.5 s",
-        "ttfb": "Root document took 230 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/tugba-isik-ercan-kadinlarimizin-potansiyelini-gelecek-vizyonuna-donusturecegiz-5f08e",
-      "mode": "mobile",
-      "fetchedAt": "2026-09-03T05:53:49.212Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/tugba-isik-ercan-kadinlarimizin-potansiyelini-gelecek-vizyonuna-donusturecegiz-5f08e",
-      "scores": {
-        "performance": 72,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 2497.3065,
-        "lcp": 5164.9325,
-        "cls": 0.04808342050976877,
-        "tbt": 230,
-        "speedIndex": 3241.2830712326413,
-        "ttfb": 226
-      },
-      "displayMetrics": {
-        "fcp": "2.5 s",
-        "lcp": "5.2 s",
-        "cls": "0.048",
-        "tbt": "230 ms",
-        "speedIndex": "3.2 s",
-        "ttfb": "Root document took 230 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/tugba-isik-ercan-kadinlarimizin-potansiyelini-gelecek-vizyonuna-donusturecegiz-5f08e",
-      "mode": "desktop",
-      "fetchedAt": "2026-09-03T05:54:05.636Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/tugba-isik-ercan-kadinlarimizin-potansiyelini-gelecek-vizyonuna-donusturecegiz-5f08e",
-      "scores": {
-        "performance": 79,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1405.1545000000003,
-        "lcp": 2581.0955000000004,
-        "cls": 0.07224313143787216,
-        "tbt": 0,
-        "speedIndex": 1557.564220252682,
-        "ttfb": 414
-      },
-      "displayMetrics": {
-        "fcp": "1.4 s",
-        "lcp": "2.6 s",
-        "cls": "0.072",
-        "tbt": "0 ms",
-        "speedIndex": "1.6 s",
-        "ttfb": "Root document took 410 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/marmarada-can-pazari-alsu-ve-tugberk-imamoglu-gemileri-carpisti-a2684",
-      "mode": "mobile",
-      "fetchedAt": "2026-09-03T05:54:22.614Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/marmarada-can-pazari-alsu-ve-tugberk-imamoglu-gemileri-carpisti-a2684",
-      "scores": {
-        "performance": 67,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3815.0410000000006,
-        "lcp": 4594.3025,
-        "cls": 0.10371687491723096,
-        "tbt": 251.4999999999991,
-        "speedIndex": 3815.0410000000006,
-        "ttfb": 222
-      },
-      "displayMetrics": {
-        "fcp": "3.8 s",
-        "lcp": "4.6 s",
-        "cls": "0.104",
-        "tbt": "250 ms",
-        "speedIndex": "3.8 s",
-        "ttfb": "Root document took 220 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/marmarada-can-pazari-alsu-ve-tugberk-imamoglu-gemileri-carpisti-a2684",
-      "mode": "desktop",
-      "fetchedAt": "2026-09-03T05:54:39.551Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/marmarada-can-pazari-alsu-ve-tugberk-imamoglu-gemileri-carpisti-a2684",
-      "scores": {
-        "performance": 80,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1445.4970000000003,
-        "lcp": 2601.3959999999997,
-        "cls": 0.047984684027376726,
-        "tbt": 1,
-        "speedIndex": 1538.8751975716664,
-        "ttfb": 254
-      },
-      "displayMetrics": {
-        "fcp": "1.4 s",
-        "lcp": "2.6 s",
-        "cls": "0.048",
-        "tbt": "0 ms",
-        "speedIndex": "1.5 s",
-        "ttfb": "Root document took 250 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/suleyman-soylu-ozgur-ozele-actigi-tazminat-davasini-kazandi-09fa1",
-      "mode": "mobile",
-      "fetchedAt": "2026-09-03T05:54:56.114Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/suleyman-soylu-ozgur-ozele-actigi-tazminat-davasini-kazandi-09fa1",
-      "scores": {
-        "performance": 81,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 2411.989,
-        "lcp": 3126.826,
-        "cls": 0.11584756930848683,
-        "tbt": 262.5,
-        "speedIndex": 3054.6016724001393,
-        "ttfb": 254
-      },
-      "displayMetrics": {
-        "fcp": "2.4 s",
-        "lcp": "3.1 s",
-        "cls": "0.116",
-        "tbt": "260 ms",
-        "speedIndex": "3.1 s",
-        "ttfb": "Root document took 250 ms"
-      }
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/suleyman-soylu-ozgur-ozele-actigi-tazminat-davasini-kazandi-09fa1",
-      "mode": "desktop",
-      "fetchedAt": "2026-09-03T05:55:12.214Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/suleyman-soylu-ozgur-ozele-actigi-tazminat-davasini-kazandi-09fa1",
-      "scores": {
-        "performance": 85,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1341.2064999999998,
-        "lcp": 2032.8455000000001,
-        "cls": 0.047860359740006436,
-        "tbt": 0,
-        "speedIndex": 1628.518038096869,
-        "ttfb": 207
-      },
-      "displayMetrics": {
-        "fcp": "1.3 s",
-        "lcp": "2.0 s",
-        "cls": "0.048",
-        "tbt": "0 ms",
-        "speedIndex": "1.6 s",
-        "ttfb": "Root document took 210 ms"
-      }
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 61 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 135 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "displayValue": "Est savings of 20 KiB"
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 40 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 6,340 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 750 ms"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.37,
+          "displayValue": "1.8 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.39,
+          "displayValue": "2.8 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 8,962 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        }
+      ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "url": "https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/devlet-bahceliden-ibb-iddianamesi-aciklamasi-yargilama-televizyonlardan-canli-yayinlanmalidir-34771",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/devlet-bahceliden-ibb-iddianamesi-aciklamasi-yargilama-televizyonlardan-canli-yayinlanmalidir-34771 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/devlet-bahceliden-ibb-iddianamesi-aciklamasi-yargilama-televizyonlardan-canli-yayinlanmalidir-34771",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/devlet-bahceliden-ibb-iddianamesi-aciklamasi-yargilama-televizyonlardan-canli-yayinlanmalidir-34771 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/marmara-denizinde-carpisan-gemilere-iliskin-sorusturma-adliyeye-sevk-durumu-bilirkisi-raporuyla-netlesecek-5f016",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/marmara-denizinde-carpisan-gemilere-iliskin-sorusturma-adliyeye-sevk-durumu-bilirkisi-raporuyla-netlesecek-5f016 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/marmara-denizinde-carpisan-gemilere-iliskin-sorusturma-adliyeye-sevk-durumu-bilirkisi-raporuyla-netlesecek-5f016",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/marmara-denizinde-carpisan-gemilere-iliskin-sorusturma-adliyeye-sevk-durumu-bilirkisi-raporuyla-netlesecek-5f016 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/arifan-kulliyesi-vakfinin-yeni-projesinde-temeller-atildi-bilal-erdogan-ve-bakan-ciftci-sivastaydi-0aabe",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/arifan-kulliyesi-vakfinin-yeni-projesinde-temeller-atildi-bilal-erdogan-ve-bakan-ciftci-sivastaydi-0aabe --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/arifan-kulliyesi-vakfinin-yeni-projesinde-temeller-atildi-bilal-erdogan-ve-bakan-ciftci-sivastaydi-0aabe",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/arifan-kulliyesi-vakfinin-yeni-projesinde-temeller-atildi-bilal-erdogan-ve-bakan-ciftci-sivastaydi-0aabe --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/2026-2027-motosiklet-eylem-plani-yururlukte-kirsehirde-kontroller-genisletilecek-12111",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/2026-2027-motosiklet-eylem-plani-yururlukte-kirsehirde-kontroller-genisletilecek-12111 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/2026-2027-motosiklet-eylem-plani-yururlukte-kirsehirde-kontroller-genisletilecek-12111",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/2026-2027-motosiklet-eylem-plani-yururlukte-kirsehirde-kontroller-genisletilecek-12111 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/enflasyonda-dusus-trendi-suruyor-agustos-ayi-tufe-verileri-belli-oldu-949ef",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/enflasyonda-dusus-trendi-suruyor-agustos-ayi-tufe-verileri-belli-oldu-949ef --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/enflasyonda-dusus-trendi-suruyor-agustos-ayi-tufe-verileri-belli-oldu-949ef",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/enflasyonda-dusus-trendi-suruyor-agustos-ayi-tufe-verileri-belli-oldu-949ef --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/icapp-9-kadin-kollari-toplantisi-istanbulda-gerceklestirildi-90d1e",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/icapp-9-kadin-kollari-toplantisi-istanbulda-gerceklestirildi-90d1e --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/icapp-9-kadin-kollari-toplantisi-istanbulda-gerceklestirildi-90d1e",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/icapp-9-kadin-kollari-toplantisi-istanbulda-gerceklestirildi-90d1e --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/suleyman-soyludan-bayburtta-anlamli-ziyaret-kenan-yavuz-etnografya-muzesini-gezdi-deaff",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/suleyman-soyludan-bayburtta-anlamli-ziyaret-kenan-yavuz-etnografya-muzesini-gezdi-deaff --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/suleyman-soyludan-bayburtta-anlamli-ziyaret-kenan-yavuz-etnografya-muzesini-gezdi-deaff",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/suleyman-soyludan-bayburtta-anlamli-ziyaret-kenan-yavuz-etnografya-muzesini-gezdi-deaff --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/icisleri-bakani-mustafa-ciftci-tusastaki-teslimat-toreninde-konustu-gok-vatandaki-gucumuz-artiyor-0d608",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/icisleri-bakani-mustafa-ciftci-tusastaki-teslimat-toreninde-konustu-gok-vatandaki-gucumuz-artiyor-0d608 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/icisleri-bakani-mustafa-ciftci-tusastaki-teslimat-toreninde-konustu-gok-vatandaki-gucumuz-artiyor-0d608",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/icisleri-bakani-mustafa-ciftci-tusastaki-teslimat-toreninde-konustu-gok-vatandaki-gucumuz-artiyor-0d608 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    }
+  ]
 }
