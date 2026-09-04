@@ -7,13 +7,24 @@ const SITE_URL =
   "https://kirsehirmanset.com/";
 
 const MAX_URLS =
-  Number(process.env.MAX_URLS || 6);
+  Number(process.env.MAX_URLS || 10);
+
+const TARGET_FEED_URL =
+  process.env.TARGET_FEED_URL ||
+  "";
+
+const TARGET_FEED_KEY =
+  process.env.TARGET_FEED_KEY ||
+  "";
 
 const DATA_DIR =
   path.resolve("data");
 
 const REPORT_DIR =
-  path.join(DATA_DIR, "reports");
+  path.join(
+    DATA_DIR,
+    "reports"
+  );
 
 await fs.mkdir(
   REPORT_DIR,
@@ -24,33 +35,7 @@ await fs.mkdir(
 
 
 /* =========================================================
-   HTTP
-   ========================================================= */
-
-async function fetchText(url) {
-  const response =
-    await fetch(
-      url,
-      {
-        headers: {
-          "user-agent":
-            "KirsehirManset-Lighthouse/2.0"
-        }
-      }
-    );
-
-  if (!response.ok) {
-    throw new Error(
-      `HTTP ${response.status}: ${url}`
-    );
-  }
-
-  return await response.text();
-}
-
-
-/* =========================================================
-   URL
+   GENEL
    ========================================================= */
 
 function cleanUrl(url) {
@@ -62,6 +47,50 @@ function cleanUrl(url) {
       /#.*$/,
       ""
     );
+}
+
+
+function normalizeUrl(url) {
+  try {
+    const u =
+      new URL(
+        cleanUrl(url)
+      );
+
+    u.hash = "";
+
+    /*
+     * AMP sayfalarını Lighthouse'a göndermiyoruz.
+     */
+    if (
+      u.pathname
+        .toLowerCase()
+        .startsWith("/amp/")
+    ) {
+      u.pathname =
+        u.pathname.replace(
+          /^\/amp\//i,
+          "/"
+        );
+    }
+
+    /*
+     * Son slash standardizasyonu.
+     */
+    if (
+      u.pathname.length > 1
+    ) {
+      u.pathname =
+        u.pathname.replace(
+          /\/+$/,
+          ""
+        );
+    }
+
+    return u.toString();
+  } catch {
+    return "";
+  }
 }
 
 
@@ -86,7 +115,18 @@ function sameHost(a, b) {
         .toLowerCase();
 
     return hostA === hostB;
+  } catch {
+    return false;
+  }
+}
 
+
+function isAmpUrl(url) {
+  try {
+    return new URL(url)
+      .pathname
+      .toLowerCase()
+      .startsWith("/amp/");
   } catch {
     return false;
   }
@@ -94,187 +134,314 @@ function sameHost(a, b) {
 
 
 /* =========================================================
-   SITEMAP
+   HTTP KONTROL
    ========================================================= */
 
-async function getSitemapUrls(
-  siteUrl
-) {
-  const base =
-    new URL(siteUrl);
-
-  const candidates = [
-    new URL(
-      "/sitemap.xml",
-      base
-    ).href,
-
-    new URL(
-      "/sitemap_index.xml",
-      base
-    ).href,
-
-    new URL(
-      "/news-sitemap.xml",
-      base
-    ).href,
-
-    new URL(
-      "/news-sitemap_index.xml",
-      base
-    ).href
-  ];
-
+async function checkUrl(url) {
   try {
-    const robots =
-      await fetchText(
-        new URL(
-          "/robots.txt",
-          base
-        ).href
+    const response =
+      await fetch(
+        url,
+        {
+          method: "HEAD",
+          redirect: "follow",
+          headers: {
+            "user-agent":
+              "KirsehirManset-Lighthouse/6.0"
+          }
+        }
       );
 
-    for (
-      const line of
-      robots.split(
-        /\r?\n/
-      )
-    ) {
-      if (
-        /^sitemap:\s*/i.test(
-          line
-        )
-      ) {
-        candidates.unshift(
-          line
-            .replace(
-              /^sitemap:\s*/i,
-              ""
-            )
-            .trim()
-        );
-      }
-    }
+    return {
+      ok:
+        response.status >= 200 &&
+        response.status < 400,
 
+      status:
+        response.status,
+
+      finalUrl:
+        response.url ||
+        url
+    };
   } catch {
-    console.log(
-      "robots.txt okunamadi."
-    );
-  }
-
-
-  const processed =
-    new Set();
-
-  const urls =
-    new Set();
-
-
-  async function readSitemap(
-    sitemapUrl,
-    depth = 0
-  ) {
-    if (
-      depth > 3 ||
-      processed.has(
-        sitemapUrl
-      )
-    ) {
-      return;
-    }
-
-    processed.add(
-      sitemapUrl
-    );
-
-    let xml;
-
+    /*
+     * Bazı sunucular HEAD desteklemez.
+     * Bu durumda GET ile ikinci kontrol.
+     */
     try {
-      xml =
-        await fetchText(
-          sitemapUrl
+      const response =
+        await fetch(
+          url,
+          {
+            method: "GET",
+            redirect: "follow",
+            headers: {
+              "user-agent":
+                "KirsehirManset-Lighthouse/6.0"
+            }
+          }
         );
 
+      return {
+        ok:
+          response.status >= 200 &&
+          response.status < 400,
+
+        status:
+          response.status,
+
+        finalUrl:
+          response.url ||
+          url
+      };
     } catch {
-      return;
-    }
-
-
-    const locations = [
-      ...xml.matchAll(
-        /<loc>\s*([^<]+)\s*<\/loc>/gi
-      )
-    ].map(
-      match =>
-        cleanUrl(
-          match[1]
-        )
-    );
-
-
-    const isIndex =
-      /<sitemapindex\b/i
-        .test(xml);
-
-
-    if (isIndex) {
-      for (
-        const location of
-        locations
-      ) {
-        if (
-          sameHost(
-            location,
-            siteUrl
-          )
-        ) {
-          await readSitemap(
-            location,
-            depth + 1
-          );
-        }
-      }
-
-      return;
-    }
-
-
-    for (
-      const location of
-      locations
-    ) {
-      if (
-        sameHost(
-          location,
-          siteUrl
-        )
-      ) {
-        urls.add(
-          location
-        );
-      }
+      return {
+        ok: false,
+        status: 0,
+        finalUrl: url
+      };
     }
   }
-
-
-  for (
-    const candidate of
-    [...new Set(candidates)]
-  ) {
-    await readSitemap(
-      candidate
-    );
-  }
-
-
-  return [
-    ...urls
-  ];
 }
 
 
 /* =========================================================
-   LIGHTHOUSE ÇALIŞTIR
+   APPS SCRIPT FEED
+   ========================================================= */
+
+async function getTargetUrls() {
+  if (
+    !TARGET_FEED_URL ||
+    !TARGET_FEED_KEY
+  ) {
+    throw new Error(
+      "TARGET_FEED_URL veya TARGET_FEED_KEY eksik."
+    );
+  }
+
+  const separator =
+    TARGET_FEED_URL.includes("?")
+      ? "&"
+      : "?";
+
+  const feedUrl =
+    TARGET_FEED_URL +
+    separator +
+    "key=" +
+    encodeURIComponent(
+      TARGET_FEED_KEY
+    );
+
+  console.log(
+    "Search Console hedef feed okunuyor..."
+  );
+
+  const response =
+    await fetch(
+      feedUrl,
+      {
+        method: "GET",
+        redirect: "follow",
+        headers: {
+          "user-agent":
+            "KirsehirManset-Lighthouse/6.0",
+          "accept":
+            "application/json"
+        }
+      }
+    );
+
+  const text =
+    await response.text();
+
+  console.log(
+    "Feed HTTP:",
+    response.status
+  );
+
+  if (
+    !response.ok
+  ) {
+    throw new Error(
+      "Target feed HTTP " +
+        response.status
+    );
+  }
+
+  let data;
+
+  try {
+    data =
+      JSON.parse(
+        text
+      );
+  } catch {
+    throw new Error(
+      "Target feed JSON döndürmedi."
+    );
+  }
+
+  if (
+    data.error
+  ) {
+    throw new Error(
+      "Target feed error: " +
+        JSON.stringify(
+          data.error
+        )
+    );
+  }
+
+  const rawUrls =
+    Array.isArray(
+      data.urls
+    )
+      ? data.urls
+      : [];
+
+  console.log(
+    "Feed URL sayısı:",
+    rawUrls.length
+  );
+
+  return rawUrls;
+}
+
+
+/* =========================================================
+   GEÇERLİ URL SEÇİMİ
+   ========================================================= */
+
+async function buildValidTargetList(
+  rawUrls
+) {
+  const candidates = [];
+
+  /*
+   * Ana sayfa her zaman ilk aday.
+   */
+  candidates.push(
+    normalizeUrl(
+      SITE_URL
+    )
+  );
+
+  for (
+    const rawUrl of
+    rawUrls
+  ) {
+    const normalized =
+      normalizeUrl(
+        rawUrl
+      );
+
+    if (
+      !normalized
+    ) {
+      continue;
+    }
+
+    if (
+      !sameHost(
+        normalized,
+        SITE_URL
+      )
+    ) {
+      continue;
+    }
+
+    /*
+     * AMP'yi atla.
+     */
+    if (
+      isAmpUrl(
+        rawUrl
+      )
+    ) {
+      continue;
+    }
+
+    candidates.push(
+      normalized
+    );
+  }
+
+  const unique =
+    [
+      ...new Set(
+        candidates
+      )
+    ];
+
+  console.log(
+    "URL doğrulama başlıyor..."
+  );
+
+  const valid = [];
+
+  for (
+    const url of
+    unique
+  ) {
+    if (
+      valid.length >=
+      MAX_URLS
+    ) {
+      break;
+    }
+
+    const check =
+      await checkUrl(
+        url
+      );
+
+    console.log(
+      check.status,
+      url
+    );
+
+    if (
+      check.ok
+    ) {
+      const finalUrl =
+        normalizeUrl(
+          check.finalUrl ||
+            url
+        );
+
+      if (
+        finalUrl &&
+        sameHost(
+          finalUrl,
+          SITE_URL
+        )
+      ) {
+        valid.push(
+          finalUrl
+        );
+      }
+    } else {
+      console.log(
+        "ATLANDI:",
+        url
+      );
+    }
+  }
+
+  return [
+    ...new Set(
+      valid
+    )
+  ].slice(
+    0,
+    MAX_URLS
+  );
+}
+
+
+/* =========================================================
+   LIGHTHOUSE
    ========================================================= */
 
 function runLighthouse(
@@ -296,15 +463,14 @@ function runLighthouse(
     "--only-categories=performance,accessibility,best-practices,seo"
   ];
 
-
   if (
-    mode === "desktop"
+    mode ===
+    "desktop"
   ) {
     args.push(
       "--preset=desktop"
     );
   }
-
 
   execFileSync(
     process.platform ===
@@ -318,14 +484,15 @@ function runLighthouse(
     ],
 
     {
-      stdio: "inherit"
+      stdio:
+        "inherit"
     }
   );
 }
 
 
 /* =========================================================
-   AUDIT DEĞERİ
+   AUDIT
    ========================================================= */
 
 function getAudit(
@@ -336,31 +503,38 @@ function getAudit(
     audits[id] || {
       score: null,
       displayValue: "",
-      numericValue: null,
+      numericValue:
+        null,
       details: null
     }
   );
 }
 
 
-/* =========================================================
-   BAŞARISIZ AUDITLER
-   ========================================================= */
-
 function getFailedAudits(
   report
 ) {
   const audits =
-    report.audits || {};
+    report.audits ||
+    {};
 
-  const result = [];
+  const failed = [];
 
   for (
-    const [id, audit] of
-    Object.entries(audits)
+    const [
+      id,
+      audit
+    ] of Object.entries(
+      audits
+    )
   ) {
     if (
-      !audit ||
+      !audit
+    ) {
+      continue;
+    }
+
+    if (
       audit.scoreDisplayMode ===
         "informative" ||
       audit.scoreDisplayMode ===
@@ -376,36 +550,35 @@ function getFailedAudits(
         "number" &&
       audit.score < 0.9
     ) {
-      result.push({
+      failed.push({
         id,
-
         title:
-          audit.title || id,
-
+          audit.title ||
+          id,
         score:
           audit.score,
-
         displayValue:
-          audit.displayValue || ""
+          audit.displayValue ||
+          ""
       });
     }
   }
 
-  result.sort(
-    (a, b) =>
-      a.score - b.score
+  failed.sort(
+    (
+      a,
+      b
+    ) =>
+      a.score -
+      b.score
   );
 
-  return result.slice(
+  return failed.slice(
     0,
-    15
+    20
   );
 }
 
-
-/* =========================================================
-   LCP ÖĞESİ
-   ========================================================= */
 
 function getLcpElement(
   audits
@@ -416,19 +589,13 @@ function getLcpElement(
       "largest-contentful-paint-element"
     );
 
-  if (
-    !audit.details
-  ) {
-    return "";
-  }
-
   try {
     const items =
-      audit.details.items || [];
+      audit.details?.items ||
+      [];
 
     if (
-      items.length &&
-      items[0]
+      items.length
     ) {
       return (
         items[0].node?.snippet ||
@@ -437,7 +604,6 @@ function getLcpElement(
         ""
       );
     }
-
   } catch {}
 
   return "";
@@ -445,7 +611,7 @@ function getLcpElement(
 
 
 /* =========================================================
-   ANA SONUÇ
+   SONUÇ
    ========================================================= */
 
 function extractSummary(
@@ -454,11 +620,12 @@ function extractSummary(
   url
 ) {
   const categories =
-    report.categories || {};
+    report.categories ||
+    {};
 
   const audits =
-    report.audits || {};
-
+    report.audits ||
+    {};
 
   function score(
     category
@@ -480,7 +647,6 @@ function extractSummary(
     );
   }
 
-
   function numeric(
     id
   ) {
@@ -493,7 +659,6 @@ function extractSummary(
     );
   }
 
-
   function display(
     id
   ) {
@@ -505,7 +670,6 @@ function extractSummary(
       ""
     );
   }
-
 
   return {
     url,
@@ -657,11 +821,19 @@ function extractSummary(
 
 
 /* =========================================================
-   ANA TARAYICI
+   ANA AKIŞ
    ========================================================= */
 
 console.log(
-  "Kirsehir Manset Lighthouse 2.0 basliyor..."
+  "========================================"
+);
+
+console.log(
+  "KIRŞEHİR MANŞET LIGHTHOUSE 6.0"
+);
+
+console.log(
+  "========================================"
 );
 
 console.log(
@@ -669,38 +841,53 @@ console.log(
   SITE_URL
 );
 
-
-const sitemap =
-  await getSitemapUrls(
-    SITE_URL
-  );
-
-
-const selectedUrls = [
-  cleanUrl(
-    SITE_URL
-  ),
-
-  ...sitemap.filter(
-    url =>
-      cleanUrl(url) !==
-      cleanUrl(SITE_URL)
-  )
-].slice(
-  0,
+console.log(
+  "Maximum URL:",
   MAX_URLS
 );
 
 
+/*
+ * Search Console feed zorunlu.
+ * Böylece yanlışlıkla sitemap'e düşüp
+ * eski/404 sayfaları taramayız.
+ */
+
+const rawTargetUrls =
+  await getTargetUrls();
+
+
+const selectedUrls =
+  await buildValidTargetList(
+    rawTargetUrls
+  );
+
+
 console.log(
-  "Taranacak URL:",
+  "Geçerli URL sayısı:",
   selectedUrls.length
 );
 
 
-const results = [];
-const errors = [];
+if (
+  !selectedUrls.length
+) {
+  throw new Error(
+    "Geçerli Lighthouse URL'si bulunamadı."
+  );
+}
 
+
+const results =
+  [];
+
+const errors =
+  [];
+
+
+/* =========================================================
+   TESTLER
+   ========================================================= */
 
 for (
   let i = 0;
@@ -710,6 +897,9 @@ for (
   const url =
     selectedUrls[i];
 
+  console.log(
+    `\n[${i + 1}/${selectedUrls.length}] ${url}`
+  );
 
   for (
     const mode of
@@ -719,7 +909,12 @@ for (
     ]
   ) {
     const filename =
-      `${String(i + 1).padStart(2, "0")}-${mode}.json`;
+      `${String(
+        i + 1
+      ).padStart(
+        2,
+        "0"
+      )}-${mode}.json`;
 
     const outputPath =
       path.join(
@@ -727,12 +922,11 @@ for (
         filename
       );
 
-
     try {
       console.log(
-        `Lighthouse ${mode}: ${url}`
+        mode.toUpperCase(),
+        url
       );
-
 
       runLighthouse(
         url,
@@ -740,19 +934,16 @@ for (
         outputPath
       );
 
-
       const raw =
         await fs.readFile(
           outputPath,
           "utf8"
         );
 
-
       const report =
         JSON.parse(
           raw
         );
-
 
       results.push(
         extractSummary(
@@ -762,13 +953,18 @@ for (
         )
       );
 
+    } catch (
+      error
+    ) {
+      console.error(
+        "Lighthouse hatası:",
+        error?.message ||
+          error
+      );
 
-    } catch (error) {
       errors.push({
         url,
-
         mode,
-
         error:
           String(
             error?.message ||
@@ -785,7 +981,7 @@ for (
    ========================================================= */
 
 const payload = {
-  version: 2,
+  version: 6,
 
   site:
     SITE_URL,
@@ -798,6 +994,9 @@ const payload = {
 
   urlsAudited:
     selectedUrls,
+
+  validUrlCount:
+    selectedUrls.length,
 
   results,
 
@@ -824,12 +1023,12 @@ await fs.writeFile(
    ========================================================= */
 
 const markdown = [
-  "# Kirsehir Manset Lighthouse",
+  "# Kırşehir Manşet Lighthouse",
   "",
   `Site: ${SITE_URL}`,
   `Tarih: ${payload.generatedAt}`,
   `Taranan URL: ${selectedUrls.length}`,
-  `Basarili test: ${results.length}`,
+  `Başarılı test: ${results.length}`,
   `Hata: ${errors.length}`,
   ""
 ];
@@ -903,13 +1102,23 @@ await fs.writeFile(
 
 
 console.log(
-  "Lighthouse islemi tamamlandi."
+  "========================================"
 );
 
 console.log(
-  `Basarili test: ${results.length}`
+  "LIGHTHOUSE TAMAMLANDI"
 );
 
 console.log(
-  `Hata: ${errors.length}`
+  "Başarılı test:",
+  results.length
+);
+
+console.log(
+  "Hata:",
+  errors.length
+);
+
+console.log(
+  "========================================"
 );
