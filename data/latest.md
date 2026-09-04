@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-03T12:31:25.330Z
+Tarih: 2026-09-04T05:33:30.376Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 44 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 9.8 s | CLS: 0.087 | TBT: 760 ms | FCP: 3.4 s | TTFB: Root document took 280 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 71 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.4 s | CLS: 0 | TBT: 30 ms | FCP: 1.9 s | TTFB: Root document took 240 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 51 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 11.1 s | CLS: 0.084 | TBT: 690 ms | FCP: 2.6 s | TTFB: Root document took 240 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 80 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.4 s | CLS: 0 | TBT: 0 ms | FCP: 1.6 s | TTFB: Root document took 170 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/defense-news-top-100-aciklandi-aselsan-ilk-40a-girdi-arca-listeye-hizli-basladi-449fd --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
