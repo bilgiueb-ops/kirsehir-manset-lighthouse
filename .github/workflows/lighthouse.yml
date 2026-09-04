@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: kirsehir-manset-lighthouse
+  cancel-in-progress: false
+
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
@@ -22,30 +26,24 @@ jobs:
 
     steps:
       - name: Repository checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: package.json
 
       - name: Check configuration
         run: |
-          if [ -z "$TARGET_FEED_URL" ]; then
-            echo "ERROR: TARGET_FEED_URL boş."
-            exit 1
-          fi
-
-          if [ -z "$TARGET_FEED_KEY" ]; then
-            echo "ERROR: TARGET_FEED_KEY boş."
-            exit 1
-          fi
-
-          echo "TARGET_FEED_URL tanimli."
-          echo "TARGET_FEED_KEY tanimli."
+          test -n "$TARGET_FEED_URL" || { echo "ERROR: TARGET_FEED_URL boş."; exit 1; }
+          test -n "$TARGET_FEED_KEY" || { echo "ERROR: TARGET_FEED_KEY boş."; exit 1; }
+          echo "TARGET_FEED_URL tanımlı."
+          echo "TARGET_FEED_KEY tanımlı."
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-audit --no-fund
 
       - name: Run Lighthouse
         run: npm run audit
@@ -54,9 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add data/
-
           if git diff --cached --quiet; then
             echo "Yeni Lighthouse verisi yok."
           else
