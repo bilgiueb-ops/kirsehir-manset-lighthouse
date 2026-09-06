@@ -1,7 +1,7 @@
 {
   "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-09-05T05:31:10.432Z",
+  "generatedAt": "2026-09-06T05:31:42.669Z",
   "maxUrls": 10,
   "urlsAudited": [
     "https://kirsehirmanset.com/",
@@ -20,38 +20,32 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-09-05T05:28:21.653Z",
+      "fetchedAt": "2026-09-06T05:28:52.678Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 49,
+        "performance": 48,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 2822.411,
-        "lcp": 16899.582000000002,
-        "cls": 0.09868680317471165,
-        "tbt": 664.5,
-        "speedIndex": 4643.7528947595765,
-        "ttfb": 234
+        "fcp": 2459.004,
+        "lcp": 5753.411499999999,
+        "cls": 0.10487892444375348,
+        "tbt": 1093,
+        "speedIndex": 3939.677819864031,
+        "ttfb": 261
       },
       "displayMetrics": {
-        "fcp": "2.8 s",
-        "lcp": "16.9 s",
-        "cls": "0.099",
-        "tbt": "660 ms",
-        "speedIndex": "4.6 s",
-        "ttfb": "Root document took 230 ms"
+        "fcp": "2.5 s",
+        "lcp": "5.8 s",
+        "cls": "0.105",
+        "tbt": "1,090 ms",
+        "speedIndex": "3.9 s",
+        "ttfb": "Root document took 260 ms"
       },
       "lcpElement": "",
       "failedAudits": [
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0,
-          "displayValue": "16.9 s"
-        },
         {
           "id": "errors-in-console",
           "title": "Browser errors were logged to the console",
@@ -68,7 +62,19 @@
           "id": "mainthread-work-breakdown",
           "title": "Minimize main-thread work",
           "score": 0,
-          "displayValue": "4.1 s"
+          "displayValue": "5.4 s"
+        },
+        {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "displayValue": "1.9 s"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "5 layout shifts found"
         },
         {
           "id": "color-contrast",
@@ -95,12 +101,6 @@
           "displayValue": "Est savings of 61 KiB"
         },
         {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 247 KiB"
-        },
-        {
           "id": "inspector-issues",
           "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
           "score": 0,
@@ -113,10 +113,22 @@
           "displayValue": "1 failure reason"
         },
         {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "displayValue": "Est savings of 20 KiB"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 90 ms"
+          "displayValue": "Est savings of 40 ms"
         },
         {
           "id": "forced-reflow-insight",
@@ -128,7 +140,7 @@
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 3,194 KiB"
+          "displayValue": "Est savings of 2,231 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -146,25 +158,13 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 990 ms"
+          "displayValue": "Est savings of 940 ms"
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.02,
-          "displayValue": "19.7 s"
-        },
-        {
-          "id": "max-potential-fid",
-          "title": "Max Potential First Input Delay",
-          "score": 0.25,
-          "displayValue": "350 ms"
-        },
-        {
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 0.45,
-          "displayValue": "660 ms"
+          "score": 0.09,
+          "displayValue": "14.3 s"
         }
       ]
     },
@@ -172,29 +172,29 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-09-05T05:28:37.422Z",
+      "fetchedAt": "2026-09-06T05:29:09.645Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 73,
+        "performance": 83,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1347.3154999999997,
-        "lcp": 4100.5185,
-        "cls": 0.00022033814712245603,
+        "fcp": 1336.316,
+        "lcp": 2244.0350000000003,
+        "cls": 0.000695338617189904,
         "tbt": 0,
-        "speedIndex": 1717.331826636765,
-        "ttfb": 216
+        "speedIndex": 1519.0584298965068,
+        "ttfb": 260
       },
       "displayMetrics": {
         "fcp": "1.3 s",
-        "lcp": "4.1 s",
-        "cls": "0",
+        "lcp": "2.2 s",
+        "cls": "0.001",
         "tbt": "0 ms",
-        "speedIndex": "1.7 s",
-        "ttfb": "Root document took 220 ms"
+        "speedIndex": "1.5 s",
+        "ttfb": "Root document took 260 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -232,7 +232,7 @@
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 133 KiB"
+          "displayValue": "Est savings of 136 KiB"
         },
         {
           "id": "inspector-issues",
@@ -247,22 +247,22 @@
           "displayValue": "1 failure reason"
         },
         {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "displayValue": "Est savings of 20 KiB"
+        },
+        {
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 100 ms"
+          "displayValue": "Est savings of 40 ms"
         },
         {
           "id": "forced-reflow-insight",
           "title": "Forced reflow",
           "score": 0,
           "displayValue": ""
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0,
-          "displayValue": "Est savings of 7,160 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -280,13 +280,7 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 310 ms"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.16,
-          "displayValue": "4.1 s"
+          "displayValue": "Est savings of 670 ms"
         },
         {
           "id": "unsized-images",
@@ -298,7 +292,7 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 9,436 KiB"
+          "displayValue": "Total size was 9,818 KiB"
         },
         {
           "id": "unminified-css",
@@ -307,16 +301,22 @@
           "displayValue": "Est savings of 4 KiB"
         },
         {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
           "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
+          "displayValue": "Est savings of 6,020 KiB"
         },
         {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.57,
-          "displayValue": "4.1 s"
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.54,
+          "displayValue": "2.2 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.66,
+          "displayValue": "1.3 s"
         }
       ]
     }

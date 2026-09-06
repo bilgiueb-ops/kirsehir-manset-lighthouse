@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-05T05:31:10.432Z
+Tarih: 2026-09-06T05:31:42.669Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 49 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 16.9 s | CLS: 0.099 | TBT: 660 ms | FCP: 2.8 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 73 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 4.1 s | CLS: 0 | TBT: 0 ms | FCP: 1.3 s | TTFB: Root document took 220 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 48 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 5.8 s | CLS: 0.105 | TBT: 1,090 ms | FCP: 2.5 s | TTFB: Root document took 260 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 83 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.2 s | CLS: 0.001 | TBT: 0 ms | FCP: 1.3 s | TTFB: Root document took 260 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/catalcada-orman-koylulerinin-zorlu-mucadelesi-hem-gecim-kapisi-hem-yasam-kulturu-467e2 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/catalcada-orman-koylulerinin-zorlu-mucadelesi-hem-gecim-kapisi-hem-yasam-kulturu-467e2 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
