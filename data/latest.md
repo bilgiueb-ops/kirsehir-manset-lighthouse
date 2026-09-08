@@ -1,28 +1,10 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-07T05:36:15.239Z
-Taranan URL: 10
-Başarılı test: 20
+Tarih: 2026-09-08T05:32:38.038Z
+Taranan URL: 1
+Başarılı test: 2
 Hata: 0
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 38 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 16.7 s | CLS: 0.09 | TBT: 1,250 ms | FCP: 3.2 s | TTFB: Root document took 250 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 65 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 4.1 s | CLS: 0.001 | TBT: 0 ms | FCP: 2.4 s | TTFB: Root document took 230 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/catalcada-orman-koylulerinin-zorlu-mucadelesi-hem-gecim-kapisi-hem-yasam-kulturu-467e2 | Performance: 66 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 5.8 s | CLS: 0.116 | TBT: 60 ms | FCP: 3.2 s | TTFB: Root document took 290 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/catalcada-orman-koylulerinin-zorlu-mucadelesi-hem-gecim-kapisi-hem-yasam-kulturu-467e2 | Performance: 60 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 5.2 s | CLS: 0.045 | TBT: 0 ms | FCP: 2.9 s | TTFB: Root document took 240 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/il-jandarma-ekipleri-adrese-baskin-duzenledi-sahte-icki-ve-etil-alkol-yakalandi-c384d | Performance: 65 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 6.6 s | CLS: 0.102 | TBT: 70 ms | FCP: 3.2 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/il-jandarma-ekipleri-adrese-baskin-duzenledi-sahte-icki-ve-etil-alkol-yakalandi-c384d | Performance: 63 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.8 s | CLS: 0.051 | TBT: 0 ms | FCP: 2.9 s | TTFB: Root document took 300 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/sari-kirmizililarda-ayrilik-resmiyet-kazandi-nelsson-fc-nordsjllanda-transfer-oldu-a902d | Performance: 80 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 3.5 s | CLS: 0.098 | TBT: 90 ms | FCP: 3.3 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/sari-kirmizililarda-ayrilik-resmiyet-kazandi-nelsson-fc-nordsjllanda-transfer-oldu-a902d | Performance: 63 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.9 s | CLS: 0.052 | TBT: 0 ms | FCP: 3.0 s | TTFB: Root document took 400 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/ons-ve-gram-altinda-yuksek-seyir-piyasa-abdden-gelecek-veriye-odaklandi-22943 | Performance: 81 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 3.2 s | CLS: 0.116 | TBT: 100 ms | FCP: 3.1 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/ons-ve-gram-altinda-yuksek-seyir-piyasa-abdden-gelecek-veriye-odaklandi-22943 | Performance: 63 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 4.0 s | CLS: 0.06 | TBT: 0 ms | FCP: 2.7 s | TTFB: Root document took 250 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/dunya-etnospor-birligi-baskani-bilal-erdogan-tokatta-genclerle-bulustu-5ee33 | Performance: 82 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 3.3 s | CLS: 0.099 | TBT: 50 ms | FCP: 3.2 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/dunya-etnospor-birligi-baskani-bilal-erdogan-tokatta-genclerle-bulustu-5ee33 | Performance: 65 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.6 s | CLS: 0.06 | TBT: 0 ms | FCP: 2.6 s | TTFB: Root document took 290 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/uluslararasi-esnaf-birligi-genel-baskani-ozdilden-suleyman-soyluya-ziyaret-7a723 | Performance: 65 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 6.6 s | CLS: 0.102 | TBT: 60 ms | FCP: 3.2 s | TTFB: Root document took 250 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/uluslararasi-esnaf-birligi-genel-baskani-ozdilden-suleyman-soyluya-ziyaret-7a723 | Performance: 59 | SEO: 100 | Accessibility: 94 | Best Practices: 69 | LCP: 5.2 s | CLS: 0.075 | TBT: 0 ms | FCP: 3.0 s | TTFB: Root document took 240 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/ak-parti-kadin-kollari-baskani-ercan-kadin-liderligi-guvenlik-politikalarinda-stratejik-bir-zorunluluktur-a353e | Performance: 76 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 4.0 s | CLS: 0.102 | TBT: 110 ms | FCP: 3.3 s | TTFB: Root document took 220 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/ak-parti-kadin-kollari-baskani-ercan-kadin-liderligi-guvenlik-politikalarinda-stratejik-bir-zorunluluktur-a353e | Performance: 63 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.9 s | CLS: 0.055 | TBT: 0 ms | FCP: 3.0 s | TTFB: Root document took 230 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/bim-hakkindaki-rekabet-kurumu-sorusturmalari-sonuclandi-kap-aciklamasi-geldi-6eca2 | Performance: 81 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 3.3 s | CLS: 0.099 | TBT: 70 ms | FCP: 3.2 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/bim-hakkindaki-rekabet-kurumu-sorusturmalari-sonuclandi-kap-aciklamasi-geldi-6eca2 | Performance: 72 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.1 s | CLS: 0.052 | TBT: 0 ms | FCP: 1.9 s | TTFB: Root document took 240 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/asensiodan-derbi-oncesi-ameliyat-aciklamasi-istikrarimizi-bozmak-istiyorlar-8dc95 | Performance: 79 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 3.4 s | CLS: 0.119 | TBT: 70 ms | FCP: 3.2 s | TTFB: Root document took 260 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/asensiodan-derbi-oncesi-ameliyat-aciklamasi-istikrarimizi-bozmak-istiyorlar-8dc95 | Performance: 63 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.9 s | CLS: 0.06 | TBT: 0 ms | FCP: 2.9 s | TTFB: Root document took 230 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 51 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 14.8 s | CLS: 0.156 | TBT: 440 ms | FCP: 3.1 s | TTFB: Root document took 230 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 72 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.0 s | CLS: 0 | TBT: 0 ms | FCP: 2.0 s | TTFB: Root document took 220 ms | LCP Element: 
