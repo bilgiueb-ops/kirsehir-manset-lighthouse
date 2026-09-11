@@ -1,13 +1,15 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-10T05:33:44.968Z
+Tarih: 2026-09-11T05:33:39.123Z
 Taranan URL: 10
-Başarılı test: 2
-Hata: 18
+Başarılı test: 4
+Hata: 16
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 53 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 8.9 s | CLS: 0.049 | TBT: 600 ms | FCP: 3.2 s | TTFB: Root document took 440 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 70 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.9 s | CLS: 0 | TBT: 10 ms | FCP: 2.4 s | TTFB: Root document took 260 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 50 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 18.9 s | CLS: 0.145 | TBT: 510 ms | FCP: 3.1 s | TTFB: Root document took 310 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 67 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.5 s | CLS: 0.001 | TBT: 10 ms | FCP: 2.1 s | TTFB: Root document took 240 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/haber/esnaf-ve-sanatkrlarin-sorunlari-ueb-genel-merkezinde-ele-alindi-e2b8c | Performance: 72 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 3.7 s | CLS: 0.115 | TBT: 220 ms | FCP: 3.7 s | TTFB: Root document took 300 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/haber/esnaf-ve-sanatkrlarin-sorunlari-ueb-genel-merkezinde-ele-alindi-e2b8c | Performance: 65 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.4 s | CLS: 0.071 | TBT: 0 ms | FCP: 2.7 s | TTFB: Root document took 220 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/anthropic-arastirmacisindan-istifa-ve-felaket-uyarisi-insanlik-yok-olma-tehlikesiyle-karsi-karsiya-ae5fa | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/anthropic-arastirmacisindan-istifa-ve-felaket-uyarisi-insanlik-yok-olma-tehlikesiyle-karsi-karsiya-ae5fa --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
@@ -26,5 +28,3 @@ mobile | https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-sehit-mehmet-ali
 desktop | https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-sehit-mehmet-ali-topatanin-ailesine-taziye-iletti-5e880 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-sehit-mehmet-ali-topatanin-ailesine-taziye-iletti-5e880 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop
 mobile | https://kirsehirmanset.com/haber/kirsehir-asik-pasa-il-halk-kutuphanesinde-bagis-kitap-mesaisi-a8856 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehir-asik-pasa-il-halk-kutuphanesinde-bagis-kitap-mesaisi-a8856 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
 desktop | https://kirsehirmanset.com/haber/kirsehir-asik-pasa-il-halk-kutuphanesinde-bagis-kitap-mesaisi-a8856 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehir-asik-pasa-il-halk-kutuphanesinde-bagis-kitap-mesaisi-a8856 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop
-mobile | https://kirsehirmanset.com/haber/mhp-lideri-bahceli-istiklalimizin-hangi-bedellerle-kazanildigini-unutmayacagiz-c690b | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/mhp-lideri-bahceli-istiklalimizin-hangi-bedellerle-kazanildigini-unutmayacagiz-c690b --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
-desktop | https://kirsehirmanset.com/haber/mhp-lideri-bahceli-istiklalimizin-hangi-bedellerle-kazanildigini-unutmayacagiz-c690b | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/mhp-lideri-bahceli-istiklalimizin-hangi-bedellerle-kazanildigini-unutmayacagiz-c690b --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop
