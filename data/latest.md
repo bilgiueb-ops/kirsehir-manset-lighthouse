@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-12T05:31:51.585Z
+Tarih: 2026-09-13T05:31:40.978Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 52 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 13.9 s | CLS: 0.171 | TBT: 380 ms | FCP: 3.1 s | TTFB: Root document took 210 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 78 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.9 s | CLS: 0.001 | TBT: 10 ms | FCP: 1.5 s | TTFB: Root document took 160 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 54 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 6.5 s | CLS: 0.115 | TBT: 610 ms | FCP: 2.5 s | TTFB: Root document took 170 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 90 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 1.5 s | CLS: 0.001 | TBT: 30 ms | FCP: 1.4 s | TTFB: Root document took 160 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/celikkubbe-kizilelma-ve-hurjet-icin-seri-uretim-vitesi-yeni-donem-stratejisi-aciklandi-34bb7 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/celikkubbe-kizilelma-ve-hurjet-icin-seri-uretim-vitesi-yeni-donem-stratejisi-aciklandi-34bb7 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
