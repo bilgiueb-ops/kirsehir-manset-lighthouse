@@ -1,17 +1,17 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-16T05:34:21.185Z
+Tarih: 2026-09-17T05:34:26.130Z
 Taranan URL: 10
 Başarılı test: 6
 Hata: 14
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 45 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 12.5 s | CLS: 0.152 | TBT: 710 ms | FCP: 2.9 s | TTFB: Root document took 230 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 72 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.5 s | CLS: 0.001 | TBT: 0 ms | FCP: 1.7 s | TTFB: Root document took 220 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/ios-27-yayinlandi-hangi-iphonelara-geldi-neler-degisti-1ff02 | Performance: 74 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 2.4 s | CLS: 0.318 | TBT: 210 ms | FCP: 2.4 s | TTFB: Root document took 370 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/ios-27-yayinlandi-hangi-iphonelara-geldi-neler-degisti-1ff02 | Performance: 68 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.2 s | CLS: 0.052 | TBT: 0 ms | FCP: 2.4 s | TTFB: Root document took 390 ms | LCP Element: 
-MOBILE | https://kirsehirmanset.com/haber/bilal-erdogan-diyarbakirda-vatandaslarla-ve-teskilatla-bir-araya-geldi-7922a | Performance: 85 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 2.5 s | CLS: 0.137 | TBT: 210 ms | FCP: 2.4 s | TTFB: Root document took 280 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/haber/bilal-erdogan-diyarbakirda-vatandaslarla-ve-teskilatla-bir-araya-geldi-7922a | Performance: 74 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.1 s | CLS: 0.06 | TBT: 0 ms | FCP: 1.7 s | TTFB: Root document took 300 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 40 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 28.9 s | CLS: 0.138 | TBT: 780 ms | FCP: 3.3 s | TTFB: Root document took 300 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 68 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 8.2 s | CLS: 0.001 | TBT: 0 ms | FCP: 1.2 s | TTFB: Root document took 230 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/haber/ahilik-haftasinda-artvin-valisi-ueb-temsilcilerini-kabul-etti-81a3c | Performance: 65 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 5.2 s | CLS: 0.1 | TBT: 140 ms | FCP: 4.2 s | TTFB: Root document took 280 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/haber/ahilik-haftasinda-artvin-valisi-ueb-temsilcilerini-kabul-etti-81a3c | Performance: 62 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 7.0 s | CLS: 0.055 | TBT: 0 ms | FCP: 2.1 s | TTFB: Root document took 230 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/haber/batman-valisi-canalp-ueb-batman-sube-yonetimini-kabul-etti-3fc6d | Performance: 67 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 4.6 s | CLS: 0.1 | TBT: 220 ms | FCP: 3.8 s | TTFB: Root document took 230 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/haber/batman-valisi-canalp-ueb-batman-sube-yonetimini-kabul-etti-3fc6d | Performance: 85 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 1.9 s | CLS: 0.015 | TBT: 0 ms | FCP: 1.3 s | TTFB: Root document took 240 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/bill-gatesten-yapay-zeka-ve-saglik-uyarilari-60747 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/bill-gatesten-yapay-zeka-ve-saglik-uyarilari-60747 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
