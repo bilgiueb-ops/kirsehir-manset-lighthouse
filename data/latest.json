@@ -1,22 +1,416 @@
 {
   "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-09-19T05:30:47.661Z",
+  "generatedAt": "2026-09-20T05:32:07.408Z",
   "maxUrls": 10,
   "urlsAudited": [
-    "https://kirsehirmanset.com/"
+    "https://kirsehirmanset.com/",
+    "https://kirsehirmanset.com/haber/acil-servisler-doluyor-grip-asisi-hakkinda-bilinmesi-gerekenler-bd1c1",
+    "https://kirsehirmanset.com/haber/cumhurbaskani-erdoganin-samsundaki-duygusal-ani-gundem-oldu-e510b",
+    "https://kirsehirmanset.com/haber/iphone-18-pronun-turkiyedeki-onarim-ucretleri-aciklandi-e7468",
+    "https://kirsehirmanset.com/haber/gta-6ya-cikistan-sonra-yeni-diller-eklenecek-turkce-var-mi-e6334",
+    "https://kirsehirmanset.com/haber/milli-ara-ne-zaman-basliyor-turkiye-fransa-maci-kocaelide-4bee2",
+    "https://kirsehirmanset.com/haber/bakan-ciftci-terorsuz-turkiye-surecini-sahada-takip-ediyoruz-d63cd",
+    "https://kirsehirmanset.com/haber/necmeddin-bilal-erdogan-dogu-gencligiyle-bir-araya-geldi-ortak-gelecegimize-dair-umutlari-paylastik-efaac",
+    "https://kirsehirmanset.com/haber/kozinoglu-sorusturmasinda-1-zanli-daha-gozaltina-alindi-562f4",
+    "https://kirsehirmanset.com/haber/kirikkalede-trafik-kazasina-mudahale-eden-polis-sehit-oldu-e9404"
   ],
-  "results": [],
-  "errors": [
+  "results": [
     {
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/ --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/01-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-09-20T05:29:06.143Z",
+      "finalUrl": "https://kirsehirmanset.com/",
+      "scores": {
+        "performance": 44,
+        "accessibility": 90,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 2376.118,
+        "lcp": 12081.800642944334,
+        "cls": 0.1550332420000193,
+        "tbt": 700.3375000000001,
+        "speedIndex": 5348.4353560455165,
+        "ttfb": 195
+      },
+      "displayMetrics": {
+        "fcp": "2.4 s",
+        "lcp": "12.1 s",
+        "cls": "0.155",
+        "tbt": "700 ms",
+        "speedIndex": "5.3 s",
+        "ttfb": "Root document took 200 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0,
+          "displayValue": "12.1 s"
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "4.7 s"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "10 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 61 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 249 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "displayValue": "Est savings of 20 KiB"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 7,501 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 970 ms"
+        }
+      ]
     },
     {
       "url": "https://kirsehirmanset.com/",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/ --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/01-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-09-20T05:29:22.995Z",
+      "finalUrl": "https://kirsehirmanset.com/",
+      "scores": {
+        "performance": 75,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1700.204,
+        "lcp": 2967.1090000000004,
+        "cls": 0.0009861922630330304,
+        "tbt": 0,
+        "speedIndex": 1739.9348205988745,
+        "ttfb": 170
+      },
+      "displayMetrics": {
+        "fcp": "1.7 s",
+        "lcp": "3.0 s",
+        "cls": "0.001",
+        "tbt": "0 ms",
+        "speedIndex": "1.7 s",
+        "ttfb": "Root document took 170 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 61 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 137 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 40 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 10,140 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 770 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.34,
+          "displayValue": "3.0 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.44,
+          "displayValue": "1.7 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 11,867 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "displayValue": "Est savings of 20 KiB"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://kirsehirmanset.com/haber/acil-servisler-doluyor-grip-asisi-hakkinda-bilinmesi-gerekenler-bd1c1",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/acil-servisler-doluyor-grip-asisi-hakkinda-bilinmesi-gerekenler-bd1c1 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/acil-servisler-doluyor-grip-asisi-hakkinda-bilinmesi-gerekenler-bd1c1",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/acil-servisler-doluyor-grip-asisi-hakkinda-bilinmesi-gerekenler-bd1c1 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/cumhurbaskani-erdoganin-samsundaki-duygusal-ani-gundem-oldu-e510b",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhurbaskani-erdoganin-samsundaki-duygusal-ani-gundem-oldu-e510b --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/cumhurbaskani-erdoganin-samsundaki-duygusal-ani-gundem-oldu-e510b",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhurbaskani-erdoganin-samsundaki-duygusal-ani-gundem-oldu-e510b --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/iphone-18-pronun-turkiyedeki-onarim-ucretleri-aciklandi-e7468",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/iphone-18-pronun-turkiyedeki-onarim-ucretleri-aciklandi-e7468 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/iphone-18-pronun-turkiyedeki-onarim-ucretleri-aciklandi-e7468",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/iphone-18-pronun-turkiyedeki-onarim-ucretleri-aciklandi-e7468 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/gta-6ya-cikistan-sonra-yeni-diller-eklenecek-turkce-var-mi-e6334",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/gta-6ya-cikistan-sonra-yeni-diller-eklenecek-turkce-var-mi-e6334 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/gta-6ya-cikistan-sonra-yeni-diller-eklenecek-turkce-var-mi-e6334",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/gta-6ya-cikistan-sonra-yeni-diller-eklenecek-turkce-var-mi-e6334 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/milli-ara-ne-zaman-basliyor-turkiye-fransa-maci-kocaelide-4bee2",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/milli-ara-ne-zaman-basliyor-turkiye-fransa-maci-kocaelide-4bee2 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/milli-ara-ne-zaman-basliyor-turkiye-fransa-maci-kocaelide-4bee2",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/milli-ara-ne-zaman-basliyor-turkiye-fransa-maci-kocaelide-4bee2 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/bakan-ciftci-terorsuz-turkiye-surecini-sahada-takip-ediyoruz-d63cd",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/bakan-ciftci-terorsuz-turkiye-surecini-sahada-takip-ediyoruz-d63cd --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/bakan-ciftci-terorsuz-turkiye-surecini-sahada-takip-ediyoruz-d63cd",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/bakan-ciftci-terorsuz-turkiye-surecini-sahada-takip-ediyoruz-d63cd --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/necmeddin-bilal-erdogan-dogu-gencligiyle-bir-araya-geldi-ortak-gelecegimize-dair-umutlari-paylastik-efaac",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/necmeddin-bilal-erdogan-dogu-gencligiyle-bir-araya-geldi-ortak-gelecegimize-dair-umutlari-paylastik-efaac --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/necmeddin-bilal-erdogan-dogu-gencligiyle-bir-araya-geldi-ortak-gelecegimize-dair-umutlari-paylastik-efaac",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/necmeddin-bilal-erdogan-dogu-gencligiyle-bir-araya-geldi-ortak-gelecegimize-dair-umutlari-paylastik-efaac --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kozinoglu-sorusturmasinda-1-zanli-daha-gozaltina-alindi-562f4",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kozinoglu-sorusturmasinda-1-zanli-daha-gozaltina-alindi-562f4 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kozinoglu-sorusturmasinda-1-zanli-daha-gozaltina-alindi-562f4",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kozinoglu-sorusturmasinda-1-zanli-daha-gozaltina-alindi-562f4 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirikkalede-trafik-kazasina-mudahale-eden-polis-sehit-oldu-e9404",
+      "mode": "mobile",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirikkalede-trafik-kazasina-mudahale-eden-polis-sehit-oldu-e9404 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirikkalede-trafik-kazasina-mudahale-eden-polis-sehit-oldu-e9404",
+      "mode": "desktop",
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirikkalede-trafik-kazasina-mudahale-eden-polis-sehit-oldu-e9404 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     }
   ]
 }
