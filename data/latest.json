@@ -1,51 +1,57 @@
 {
   "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-09-25T05:33:27.079Z",
+  "generatedAt": "2026-09-26T05:32:58.706Z",
   "maxUrls": 10,
   "urlsAudited": [
     "https://kirsehirmanset.com/",
     "https://kirsehirmanset.com/haber/bahceliden-cumhurbaskani-erdoganin-bm-konusmasina-tam-destek-7fea3",
-    "https://kirsehirmanset.com/haber/fatih-terimden-okan-buruka-destek-camiaya-birlik-cagrisi-3e3ec",
-    "https://kirsehirmanset.com/haber/youtube-cocuk-guvenliginde-metanin-uzlasma-yolunu-izlemeyecek-5ad78",
-    "https://kirsehirmanset.com/haber/cocuklar-icin-gezen-sinema-8-yilda-15-milyon-cocuga-ulasti-89000",
-    "https://kirsehirmanset.com/haber/adliyelerde-dijital-guvenlik-ve-dezenformasyon-burolari-kuruluyor-98827",
-    "https://kirsehirmanset.com/haber/mansur-yavas-chpden-istifa-etti-bahceliden-aciklama-geldi-59189",
-    "https://kirsehirmanset.com/haber/cumhur-ittifakinda-istanbul-mesaisi-soylu-mhp-il-baskanliginda-208ea",
-    "https://kirsehirmanset.com/haber/kirsehirde-neset-ertas-icin-buyuk-anma-programi-duzenlenecek-759c9",
-    "https://kirsehirmanset.com/haber/seyfe-golu-cevresinde-endemik-bitkiler-bilimsel-olarak-incelendi-26a49"
+    "https://kirsehirmanset.com/haber/tarim-ve-gida-sektorune-dunya-bankasindan-750-milyon-dolar-b251f",
+    "https://kirsehirmanset.com/haber/uzaktan-calismada-yeni-donem-yonetmelikte-degisiklige-gidildi-4d30f",
+    "https://kirsehirmanset.com/haber/genclik-ve-spor-bakanligindan-neset-ertas-icin-anlamli-mesaj-da072",
+    "https://kirsehirmanset.com/haber/emlak-katilimdan-katilimevim-ve-birevim-devri-aciklamasi-c42f8",
+    "https://kirsehirmanset.com/haber/muhsin-yazicioglu-sorusturmasinda-yeni-operasyon-33-gozalti-10611",
+    "https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-turkiye-ekonomisine-yonelik-bir-risk-yok-57a31",
+    "https://kirsehirmanset.com/haber/kirsehirde-koy-cocuklarinin-gokyuzu-hayali-gercege-donusuyor-6cfae",
+    "https://kirsehirmanset.com/haber/kirsehirde-okul-disi-ogrenme-ortamlari-tek-platformda-bulustu-638cb"
   ],
   "results": [
     {
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-09-25T05:30:27.183Z",
+      "fetchedAt": "2026-09-26T05:29:45.551Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 53,
+        "performance": 49,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 2977.4115,
-        "lcp": 7438.292,
-        "cls": 0.04935252206457383,
-        "tbt": 455.5,
-        "speedIndex": 6726.3307789980645,
-        "ttfb": 217
+        "fcp": 3196.1890000000003,
+        "lcp": 13729.649500000001,
+        "cls": 0.08763395277197254,
+        "tbt": 712.5,
+        "speedIndex": 3362.8494580000006,
+        "ttfb": 249
       },
       "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "7.4 s",
-        "cls": "0.049",
-        "tbt": "460 ms",
-        "speedIndex": "6.7 s",
-        "ttfb": "Root document took 220 ms"
+        "fcp": "3.2 s",
+        "lcp": "13.7 s",
+        "cls": "0.088",
+        "tbt": "710 ms",
+        "speedIndex": "3.4 s",
+        "ttfb": "Root document took 250 ms"
       },
       "lcpElement": "",
       "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0,
+          "displayValue": "13.7 s"
+        },
         {
           "id": "errors-in-console",
           "title": "Browser errors were logged to the console",
@@ -89,6 +95,12 @@
           "displayValue": "Est savings of 61 KiB"
         },
         {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 249 KiB"
+        },
+        {
           "id": "inspector-issues",
           "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
           "score": 0,
@@ -110,19 +122,19 @@
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 40 ms"
+          "displayValue": "Est savings of 70 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
         },
         {
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 3,890 KiB"
-        },
-        {
-          "id": "lcp-breakdown-insight",
-          "title": "LCP breakdown",
-          "score": 0,
-          "displayValue": ""
+          "displayValue": "Est savings of 1,744 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -140,31 +152,19 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 1,630 ms"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.04,
-          "displayValue": "7.4 s"
+          "displayValue": "Est savings of 1,520 ms"
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.23,
-          "displayValue": "10.5 s"
-        },
-        {
-          "id": "speed-index",
-          "title": "Speed Index",
-          "score": 0.36,
-          "displayValue": "6.7 s"
+          "score": 0.06,
+          "displayValue": "16.0 s"
         },
         {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.44,
-          "displayValue": "270 ms"
+          "score": 0.17,
+          "displayValue": "400 ms"
         }
       ]
     },
@@ -172,29 +172,29 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-09-25T05:30:46.154Z",
+      "fetchedAt": "2026-09-26T05:30:03.402Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 72,
+        "performance": 67,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1650.1910000000003,
-        "lcp": 3559.765020324708,
-        "cls": 0.0053128093118421475,
-        "tbt": 0,
-        "speedIndex": 1845.2615715637967,
-        "ttfb": 295
+        "fcp": 1937.3024999999998,
+        "lcp": 4552.400700164795,
+        "cls": 0.0053018234718405725,
+        "tbt": 14,
+        "speedIndex": 2101.9137574536826,
+        "ttfb": 225
       },
       "displayMetrics": {
-        "fcp": "1.7 s",
-        "lcp": "3.6 s",
+        "fcp": "1.9 s",
+        "lcp": "4.6 s",
         "cls": "0.005",
-        "tbt": "0 ms",
-        "speedIndex": "1.8 s",
-        "ttfb": "Root document took 300 ms"
+        "tbt": "10 ms",
+        "speedIndex": "2.1 s",
+        "ttfb": "Root document took 230 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -223,16 +223,10 @@
           "displayValue": ""
         },
         {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 61 KiB"
-        },
-        {
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 244 KiB"
+          "displayValue": "Est savings of 248 KiB"
         },
         {
           "id": "inspector-issues",
@@ -250,13 +244,19 @@
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 100 ms"
+          "displayValue": "Est savings of 60 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
         },
         {
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 6,388 KiB"
+          "displayValue": "Est savings of 4,394 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -274,19 +274,25 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 660 ms"
+          "displayValue": "Est savings of 430 ms"
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.23,
-          "displayValue": "3.6 s"
+          "score": 0.11,
+          "displayValue": "4.6 s"
         },
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.47,
-          "displayValue": "1.7 s"
+          "score": 0.32,
+          "displayValue": "1.9 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.48,
+          "displayValue": "4.6 s"
         },
         {
           "id": "unsized-images",
@@ -298,7 +304,7 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 10,364 KiB"
+          "displayValue": "Total size was 8,945 KiB"
         },
         {
           "id": "unminified-css",
@@ -307,16 +313,10 @@
           "displayValue": "Est savings of 4 KiB"
         },
         {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
           "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
-        },
-        {
-          "id": "speed-index",
-          "title": "Speed Index",
-          "score": 0.69,
-          "displayValue": "1.8 s"
+          "displayValue": "Est savings of 61 KiB"
         }
       ]
     }
@@ -333,84 +333,84 @@
       "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/bahceliden-cumhurbaskani-erdoganin-bm-konusmasina-tam-destek-7fea3 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/fatih-terimden-okan-buruka-destek-camiaya-birlik-cagrisi-3e3ec",
+      "url": "https://kirsehirmanset.com/haber/tarim-ve-gida-sektorune-dunya-bankasindan-750-milyon-dolar-b251f",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/fatih-terimden-okan-buruka-destek-camiaya-birlik-cagrisi-3e3ec --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/tarim-ve-gida-sektorune-dunya-bankasindan-750-milyon-dolar-b251f --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/fatih-terimden-okan-buruka-destek-camiaya-birlik-cagrisi-3e3ec",
+      "url": "https://kirsehirmanset.com/haber/tarim-ve-gida-sektorune-dunya-bankasindan-750-milyon-dolar-b251f",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/fatih-terimden-okan-buruka-destek-camiaya-birlik-cagrisi-3e3ec --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/tarim-ve-gida-sektorune-dunya-bankasindan-750-milyon-dolar-b251f --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/03-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/youtube-cocuk-guvenliginde-metanin-uzlasma-yolunu-izlemeyecek-5ad78",
+      "url": "https://kirsehirmanset.com/haber/uzaktan-calismada-yeni-donem-yonetmelikte-degisiklige-gidildi-4d30f",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/youtube-cocuk-guvenliginde-metanin-uzlasma-yolunu-izlemeyecek-5ad78 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/uzaktan-calismada-yeni-donem-yonetmelikte-degisiklige-gidildi-4d30f --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/youtube-cocuk-guvenliginde-metanin-uzlasma-yolunu-izlemeyecek-5ad78",
+      "url": "https://kirsehirmanset.com/haber/uzaktan-calismada-yeni-donem-yonetmelikte-degisiklige-gidildi-4d30f",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/youtube-cocuk-guvenliginde-metanin-uzlasma-yolunu-izlemeyecek-5ad78 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/uzaktan-calismada-yeni-donem-yonetmelikte-degisiklige-gidildi-4d30f --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/04-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/cocuklar-icin-gezen-sinema-8-yilda-15-milyon-cocuga-ulasti-89000",
+      "url": "https://kirsehirmanset.com/haber/genclik-ve-spor-bakanligindan-neset-ertas-icin-anlamli-mesaj-da072",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cocuklar-icin-gezen-sinema-8-yilda-15-milyon-cocuga-ulasti-89000 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/genclik-ve-spor-bakanligindan-neset-ertas-icin-anlamli-mesaj-da072 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/cocuklar-icin-gezen-sinema-8-yilda-15-milyon-cocuga-ulasti-89000",
+      "url": "https://kirsehirmanset.com/haber/genclik-ve-spor-bakanligindan-neset-ertas-icin-anlamli-mesaj-da072",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cocuklar-icin-gezen-sinema-8-yilda-15-milyon-cocuga-ulasti-89000 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/genclik-ve-spor-bakanligindan-neset-ertas-icin-anlamli-mesaj-da072 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/05-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/adliyelerde-dijital-guvenlik-ve-dezenformasyon-burolari-kuruluyor-98827",
+      "url": "https://kirsehirmanset.com/haber/emlak-katilimdan-katilimevim-ve-birevim-devri-aciklamasi-c42f8",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/adliyelerde-dijital-guvenlik-ve-dezenformasyon-burolari-kuruluyor-98827 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/emlak-katilimdan-katilimevim-ve-birevim-devri-aciklamasi-c42f8 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/adliyelerde-dijital-guvenlik-ve-dezenformasyon-burolari-kuruluyor-98827",
+      "url": "https://kirsehirmanset.com/haber/emlak-katilimdan-katilimevim-ve-birevim-devri-aciklamasi-c42f8",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/adliyelerde-dijital-guvenlik-ve-dezenformasyon-burolari-kuruluyor-98827 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/emlak-katilimdan-katilimevim-ve-birevim-devri-aciklamasi-c42f8 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/06-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/mansur-yavas-chpden-istifa-etti-bahceliden-aciklama-geldi-59189",
+      "url": "https://kirsehirmanset.com/haber/muhsin-yazicioglu-sorusturmasinda-yeni-operasyon-33-gozalti-10611",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/mansur-yavas-chpden-istifa-etti-bahceliden-aciklama-geldi-59189 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/muhsin-yazicioglu-sorusturmasinda-yeni-operasyon-33-gozalti-10611 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/mansur-yavas-chpden-istifa-etti-bahceliden-aciklama-geldi-59189",
+      "url": "https://kirsehirmanset.com/haber/muhsin-yazicioglu-sorusturmasinda-yeni-operasyon-33-gozalti-10611",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/mansur-yavas-chpden-istifa-etti-bahceliden-aciklama-geldi-59189 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/muhsin-yazicioglu-sorusturmasinda-yeni-operasyon-33-gozalti-10611 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/07-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/cumhur-ittifakinda-istanbul-mesaisi-soylu-mhp-il-baskanliginda-208ea",
+      "url": "https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-turkiye-ekonomisine-yonelik-bir-risk-yok-57a31",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhur-ittifakinda-istanbul-mesaisi-soylu-mhp-il-baskanliginda-208ea --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-turkiye-ekonomisine-yonelik-bir-risk-yok-57a31 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/cumhur-ittifakinda-istanbul-mesaisi-soylu-mhp-il-baskanliginda-208ea",
+      "url": "https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-turkiye-ekonomisine-yonelik-bir-risk-yok-57a31",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhur-ittifakinda-istanbul-mesaisi-soylu-mhp-il-baskanliginda-208ea --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/cumhurbaskani-erdogan-turkiye-ekonomisine-yonelik-bir-risk-yok-57a31 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/08-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehirde-neset-ertas-icin-buyuk-anma-programi-duzenlenecek-759c9",
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-koy-cocuklarinin-gokyuzu-hayali-gercege-donusuyor-6cfae",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehirde-neset-ertas-icin-buyuk-anma-programi-duzenlenecek-759c9 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehirde-koy-cocuklarinin-gokyuzu-hayali-gercege-donusuyor-6cfae --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehirde-neset-ertas-icin-buyuk-anma-programi-duzenlenecek-759c9",
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-koy-cocuklarinin-gokyuzu-hayali-gercege-donusuyor-6cfae",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehirde-neset-ertas-icin-buyuk-anma-programi-duzenlenecek-759c9 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehirde-koy-cocuklarinin-gokyuzu-hayali-gercege-donusuyor-6cfae --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/09-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/seyfe-golu-cevresinde-endemik-bitkiler-bilimsel-olarak-incelendi-26a49",
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-okul-disi-ogrenme-ortamlari-tek-platformda-bulustu-638cb",
       "mode": "mobile",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/seyfe-golu-cevresinde-endemik-bitkiler-bilimsel-olarak-incelendi-26a49 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehirde-okul-disi-ogrenme-ortamlari-tek-platformda-bulustu-638cb --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo"
     },
     {
-      "url": "https://kirsehirmanset.com/haber/seyfe-golu-cevresinde-endemik-bitkiler-bilimsel-olarak-incelendi-26a49",
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-okul-disi-ogrenme-ortamlari-tek-platformda-bulustu-638cb",
       "mode": "desktop",
-      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/seyfe-golu-cevresinde-endemik-bitkiler-bilimsel-olarak-incelendi-26a49 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      "error": "Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/kirsehirde-okul-disi-ogrenme-ortamlari-tek-platformda-bulustu-638cb --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/10-desktop.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
     }
   ]
 }
