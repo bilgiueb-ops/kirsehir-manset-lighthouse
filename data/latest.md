@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-09-26T05:32:58.706Z
+Tarih: 2026-09-27T05:32:53.527Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 49 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 13.7 s | CLS: 0.088 | TBT: 710 ms | FCP: 3.2 s | TTFB: Root document took 250 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 67 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 4.6 s | CLS: 0.005 | TBT: 10 ms | FCP: 1.9 s | TTFB: Root document took 230 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 53 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 10.8 s | CLS: 0.154 | TBT: 430 ms | FCP: 2.4 s | TTFB: Root document took 170 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 85 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.2 s | CLS: 0.005 | TBT: 0 ms | FCP: 1.2 s | TTFB: Root document took 170 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/bahceliden-cumhurbaskani-erdoganin-bm-konusmasina-tam-destek-7fea3 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/bahceliden-cumhurbaskani-erdoganin-bm-konusmasina-tam-destek-7fea3 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
