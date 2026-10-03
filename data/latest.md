@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-10-02T05:36:11.205Z
+Tarih: 2026-10-03T05:44:33.931Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 41 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 11.9 s | CLS: 0.094 | TBT: 1,130 ms | FCP: 3.4 s | TTFB: Root document took 250 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 84 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.1 s | CLS: 0.012 | TBT: 10 ms | FCP: 1.4 s | TTFB: Root document took 230 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 45 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 4.6 s | CLS: 0.142 | TBT: 1,970 ms | FCP: 2.4 s | TTFB: Root document took 290 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 87 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 1.9 s | CLS: 0.005 | TBT: 10 ms | FCP: 1.3 s | TTFB: Root document took 190 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/neset-ertas-kirsehirde-gonul-dagi-zirvesinde-turkulerle-anildi-0d6c7 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/neset-ertas-kirsehirde-gonul-dagi-zirvesinde-turkulerle-anildi-0d6c7 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
