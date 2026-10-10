@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-10-09T11:59:51.078Z
+Tarih: 2026-10-10T11:16:35.785Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 62 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 13.9 s | CLS: 0.138 | TBT: 210 ms | FCP: 2.4 s | TTFB: Root document took 190 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 73 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 4.1 s | CLS: 0.013 | TBT: 0 ms | FCP: 1.4 s | TTFB: Root document took 200 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 62 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 4.9 s | CLS: 0.098 | TBT: 500 ms | FCP: 2.4 s | TTFB: Root document took 220 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 87 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 1.7 s | CLS: 0.006 | TBT: 0 ms | FCP: 1.5 s | TTFB: Root document took 250 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/apple-iphone-duo-icin-gelistiricileri-hazirliyor-on-siparis-16-ekimde-teslimat-23-ekimde-da917 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/apple-iphone-duo-icin-gelistiricileri-hazirliyor-on-siparis-16-ekimde-teslimat-23-ekimde-da917 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
