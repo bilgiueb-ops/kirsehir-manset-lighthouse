@@ -1,10 +1,11 @@
 {
   "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-10-28T11:29:36.565Z",
+  "generatedAt": "2026-10-29T11:40:44.925Z",
   "maxUrls": 10,
   "urlsAudited": [
     "https://kirsehirmanset.com/",
+    "https://kirsehirmanset.com/haber/meclisin-2027-butcesi-belli-oldu-33-milyar-787-milyon-lira-6fe18",
     "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
     "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
     "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
@@ -12,45 +13,56 @@
     "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
     "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
     "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
-    "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
-    "https://kirsehirmanset.com/haber/kirsehirspor-karakopru-maci-oncesi-play-off-hattinda-b1b6e"
+    "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f"
   ],
   "results": [
     {
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:24:28.639Z",
+      "fetchedAt": "2026-10-29T11:35:01.206Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 48,
+        "performance": 43,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 2969.06,
-        "lcp": 7285.636499999999,
-        "cls": 0.09785831591130507,
-        "tbt": 841.5,
-        "speedIndex": 3070.428756000002,
-        "ttfb": 282
+        "fcp": 2681.2115000000003,
+        "lcp": 33506.695999999996,
+        "cls": 0.08798031164301896,
+        "tbt": 942.0844999999999,
+        "speedIndex": 5925.774440425981,
+        "ttfb": 191
       },
       "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "7.3 s",
-        "cls": "0.098",
-        "tbt": "840 ms",
-        "speedIndex": "3.1 s",
-        "ttfb": "Root document took 280 ms"
+        "fcp": "2.7 s",
+        "lcp": "33.5 s",
+        "cls": "0.088",
+        "tbt": "940 ms",
+        "speedIndex": "5.9 s",
+        "ttfb": "Root document took 190 ms"
       },
       "lcpElement": "",
       "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0,
+          "displayValue": "33.5 s"
+        },
         {
           "id": "errors-in-console",
           "title": "Browser errors were logged to the console",
           "score": 0,
           "displayValue": ""
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0,
+          "displayValue": "34.1 s"
         },
         {
           "id": "third-party-cookies",
@@ -62,13 +74,7 @@
           "id": "mainthread-work-breakdown",
           "title": "Minimize main-thread work",
           "score": 0,
-          "displayValue": "5.0 s"
-        },
-        {
-          "id": "bootup-time",
-          "title": "Reduce JavaScript execution time",
-          "score": 0,
-          "displayValue": "1.4 s"
+          "displayValue": "5.8 s"
         },
         {
           "id": "color-contrast",
@@ -98,7 +104,7 @@
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 135 KiB"
+          "displayValue": "Est savings of 252 KiB"
         },
         {
           "id": "inspector-issues",
@@ -116,7 +122,13 @@
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 40 ms"
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 4,178 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -134,37 +146,25 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 830 ms"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.05,
-          "displayValue": "7.3 s"
+          "displayValue": "Est savings of 780 ms"
         },
         {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.09,
-          "displayValue": "480 ms"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.1,
-          "displayValue": "13.7 s"
+          "score": 0.12,
+          "displayValue": "450 ms"
         },
         {
           "id": "total-blocking-time",
           "title": "Total Blocking Time",
-          "score": 0.34,
-          "displayValue": "840 ms"
+          "score": 0.29,
+          "displayValue": "940 ms"
         },
         {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.47,
+          "displayValue": "5.9 s"
         }
       ]
     },
@@ -172,29 +172,29 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:24:45.699Z",
+      "fetchedAt": "2026-10-29T11:35:22.090Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 87,
+        "performance": 65,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1237.747,
-        "lcp": 1917.0245,
-        "cls": 0.005000923011010322,
-        "tbt": 26,
-        "speedIndex": 1545.9358870135493,
-        "ttfb": 188
+        "fcp": 1720.5735,
+        "lcp": 5447.667999999999,
+        "cls": 0.004944956780655784,
+        "tbt": 21,
+        "speedIndex": 2484.030422445928,
+        "ttfb": 198
       },
       "displayMetrics": {
-        "fcp": "1.2 s",
-        "lcp": "1.9 s",
+        "fcp": "1.7 s",
+        "lcp": "5.4 s",
         "cls": "0.005",
-        "tbt": "30 ms",
-        "speedIndex": "1.5 s",
-        "ttfb": "Root document took 190 ms"
+        "tbt": "20 ms",
+        "speedIndex": "2.5 s",
+        "ttfb": "Root document took 200 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -221,18 +221,12 @@
           "title": "Heading elements are not in a sequentially-descending order",
           "score": 0,
           "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 61 KiB"
         },
         {
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 249 KiB"
+          "displayValue": "Est savings of 252 KiB"
         },
         {
           "id": "inspector-issues",
@@ -245,176 +239,6 @@
           "title": "Page prevented back/forward cache restoration",
           "score": 0,
           "displayValue": "1 failure reason"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "forced-reflow-insight",
-          "title": "Forced reflow",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "lcp-discovery-insight",
-          "title": "LCP request discovery",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 690 ms"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 9,406 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0.5,
-          "displayValue": "Est savings of 5,831 KiB"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.66,
-          "displayValue": "1.9 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.72,
-          "displayValue": "1.2 s"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
-      "mode": "mobile",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:25:02.357Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
-      "scores": {
-        "performance": 68,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3014.3340000000003,
-        "lcp": 3030.2540000000004,
-        "cls": 0.2985027982943268,
-        "tbt": 234.4999999999991,
-        "speedIndex": 3813.966966581515,
-        "ttfb": 391
-      },
-      "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "3.0 s",
-        "cls": "0.299",
-        "tbt": "230 ms",
-        "speedIndex": "3.8 s",
-        "ttfb": "Root document took 390 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "title": "Minimize main-thread work",
-          "score": 0,
-          "displayValue": "2.3 s"
-        },
-        {
-          "id": "layout-shifts",
-          "title": "Avoid large layout shifts",
-          "score": 0,
-          "displayValue": "12 layout shifts found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cls-culprits-insight",
-          "title": "Layout shift culprits",
-          "score": 0,
-          "displayValue": ""
         },
         {
           "id": "font-display-insight",
@@ -429,746 +253,10 @@
           "displayValue": ""
         },
         {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 1,700 ms"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.29,
-          "displayValue": "9.6 s"
-        },
-        {
-          "id": "cumulative-layout-shift",
-          "title": "Cumulative Layout Shift",
-          "score": 0.4,
-          "displayValue": "0.299"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.49,
-          "displayValue": "3.0 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 4,909 KiB"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:25:17.967Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
-      "scores": {
-        "performance": 79,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1477.847,
-        "lcp": 2387.269,
-        "cls": 0.09435310056488677,
-        "tbt": 0,
-        "speedIndex": 1609.1980988907867,
-        "ttfb": 332
-      },
-      "displayMetrics": {
-        "fcp": "1.5 s",
-        "lcp": "2.4 s",
-        "cls": "0.094",
-        "tbt": "0 ms",
-        "speedIndex": "1.6 s",
-        "ttfb": "Root document took 330 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 59 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 250 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0,
-          "displayValue": "Est savings of 20 KiB"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 4,814 KiB"
-        },
-        {
-          "id": "lcp-discovery-insight",
-          "title": "LCP request discovery",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 540 ms"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.5,
-          "displayValue": "2.4 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 7,944 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.57,
-          "displayValue": "1.5 s"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
-      "mode": "mobile",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:25:33.839Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
-      "scores": {
-        "performance": 80,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3127.1705,
-        "lcp": 3130.736,
-        "cls": 0.10391013222471791,
-        "tbt": 218,
-        "speedIndex": 3970.1611415285106,
-        "ttfb": 212
-      },
-      "displayMetrics": {
-        "fcp": "3.1 s",
-        "lcp": "3.1 s",
-        "cls": "0.104",
-        "tbt": "220 ms",
-        "speedIndex": "4.0 s",
-        "ttfb": "Root document took 210 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "title": "Minimize main-thread work",
-          "score": 0,
-          "displayValue": "2.1 s"
-        },
-        {
-          "id": "layout-shifts",
-          "title": "Avoid large layout shifts",
-          "score": 0,
-          "displayValue": "10 layout shifts found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 60 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cls-culprits-insight",
-          "title": "Layout shift culprits",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 1,690 ms"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.44,
-          "displayValue": "7.8 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.45,
-          "displayValue": "3.1 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 4,646 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:25:49.765Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
-      "scores": {
-        "performance": 85,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1330.1510000000003,
-        "lcp": 1912.627,
-        "cls": 0.09050340589980908,
-        "tbt": 14,
-        "speedIndex": 1458.2104470873273,
-        "ttfb": 190
-      },
-      "displayMetrics": {
-        "fcp": "1.3 s",
-        "lcp": "1.9 s",
-        "cls": "0.091",
-        "tbt": "10 ms",
-        "speedIndex": "1.5 s",
-        "ttfb": "Root document took 190 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 59 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 135 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0,
-          "displayValue": "Est savings of 20 KiB"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0,
-          "displayValue": "Est savings of 4,884 KiB"
-        },
-        {
-          "id": "lcp-discovery-insight",
-          "title": "LCP request discovery",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 650 ms"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 7,841 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.66,
-          "displayValue": "1.3 s"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.66,
-          "displayValue": "1.9 s"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
-      "mode": "mobile",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:26:05.126Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
-      "scores": {
-        "performance": 59,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3020.6925,
-        "lcp": 4051.2245,
-        "cls": 0.3650670102676436,
-        "tbt": 227.5,
-        "speedIndex": 3819.895877928876,
-        "ttfb": 194
-      },
-      "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "4.1 s",
-        "cls": "0.365",
-        "tbt": "230 ms",
-        "speedIndex": "3.8 s",
-        "ttfb": "Root document took 190 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "title": "Minimize main-thread work",
-          "score": 0,
-          "displayValue": "2.1 s"
-        },
-        {
-          "id": "layout-shifts",
-          "title": "Avoid large layout shifts",
-          "score": 0,
-          "displayValue": "11 layout shifts found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 60 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 135 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cls-culprits-insight",
-          "title": "Layout shift culprits",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 1,680 ms"
-        },
-        {
-          "id": "cumulative-layout-shift",
-          "title": "Cumulative Layout Shift",
-          "score": 0.29,
-          "displayValue": "0.365"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.45,
-          "displayValue": "7.7 s"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.48,
-          "displayValue": "4.1 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.49,
-          "displayValue": "3.0 s"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:26:20.168Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
-      "scores": {
-        "performance": 79,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1215.2454999999998,
-        "lcp": 2624.7315,
-        "cls": 0.09254959073540336,
-        "tbt": 5,
-        "speedIndex": 1468.4563000787111,
-        "ttfb": 191
-      },
-      "displayMetrics": {
-        "fcp": "1.2 s",
-        "lcp": "2.6 s",
-        "cls": "0.093",
-        "tbt": "10 ms",
-        "speedIndex": "1.5 s",
-        "ttfb": "Root document took 190 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 251 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0,
-          "displayValue": "Est savings of 4,614 KiB"
+          "displayValue": "Est savings of 7,043 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -1191,8 +279,26 @@
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
+          "score": 0.06,
+          "displayValue": "5.4 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.34,
+          "displayValue": "5.4 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
           "score": 0.43,
-          "displayValue": "2.6 s"
+          "displayValue": "1.7 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.43,
+          "displayValue": "2.5 s"
         },
         {
           "id": "unsized-images",
@@ -1204,61 +310,43 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 7,742 KiB"
+          "displayValue": "Total size was 9,242 KiB"
         },
         {
           "id": "unminified-css",
           "title": "Minify CSS",
           "score": 0.5,
           "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 59 KiB"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.74,
-          "displayValue": "1.2 s"
         }
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
+      "url": "https://kirsehirmanset.com/haber/meclisin-2027-butcesi-belli-oldu-33-milyar-787-milyon-lira-6fe18",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:26:35.733Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
+      "fetchedAt": "2026-10-29T11:35:42.181Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/meclisin-2027-butcesi-belli-oldu-33-milyar-787-milyon-lira-6fe18",
       "scores": {
-        "performance": 55,
+        "performance": 59,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 3677.5609999999997,
-        "lcp": 4455.831,
-        "cls": 0.29920146985080043,
-        "tbt": 272.5,
-        "speedIndex": 4205.014957336793,
-        "ttfb": 200
+        "fcp": 2868.1745,
+        "lcp": 3555.7850000000003,
+        "cls": 0.33648168190432254,
+        "tbt": 270.5,
+        "speedIndex": 5352.553074846528,
+        "ttfb": 192
       },
       "displayMetrics": {
-        "fcp": "3.7 s",
-        "lcp": "4.5 s",
-        "cls": "0.299",
+        "fcp": "2.9 s",
+        "lcp": "3.6 s",
+        "cls": "0.336",
         "tbt": "270 ms",
-        "speedIndex": "4.2 s",
-        "ttfb": "Root document took 200 ms"
+        "speedIndex": "5.4 s",
+        "ttfb": "Root document took 190 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -1278,7 +366,7 @@
           "id": "mainthread-work-breakdown",
           "title": "Minimize main-thread work",
           "score": 0,
-          "displayValue": "2.2 s"
+          "displayValue": "4.0 s"
         },
         {
           "id": "layout-shifts",
@@ -1315,140 +403,6 @@
           "title": "Reduce unused CSS",
           "score": 0,
           "displayValue": "Est savings of 60 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 251 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cls-culprits-insight",
-          "title": "Layout shift culprits",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 2,350 ms"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.3,
-          "displayValue": "3.7 s"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.31,
-          "displayValue": "9.4 s"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.38,
-          "displayValue": "4.5 s"
-        },
-        {
-          "id": "cumulative-layout-shift",
-          "title": "Cumulative Layout Shift",
-          "score": 0.4,
-          "displayValue": "0.299"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:26:50.795Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
-      "scores": {
-        "performance": 69,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 2210.361,
-        "lcp": 3116.6855000000005,
-        "cls": 0.06819938265221308,
-        "tbt": 0,
-        "speedIndex": 2210.361,
-        "ttfb": 195
-      },
-      "displayMetrics": {
-        "fcp": "2.2 s",
-        "lcp": "3.1 s",
-        "cls": "0.068",
-        "tbt": "0 ms",
-        "speedIndex": "2.2 s",
-        "ttfb": "Root document took 200 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 59 KiB"
         },
         {
           "id": "unused-javascript",
@@ -1469,10 +423,162 @@
           "displayValue": "1 failure reason"
         },
         {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,530 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.31,
+          "displayValue": "9.3 s"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "score": 0.33,
+          "displayValue": "0.336"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 6,875 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/meclisin-2027-butcesi-belli-oldu-33-milyar-787-milyon-lira-6fe18",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:36:19.387Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/meclisin-2027-butcesi-belli-oldu-33-milyar-787-milyon-lira-6fe18",
+      "scores": {
+        "performance": 67,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1306.465,
+        "lcp": 5409.763,
+        "cls": 0.11145512642874392,
+        "tbt": 12,
+        "speedIndex": 1733.0442054300165,
+        "ttfb": 196
+      },
+      "displayMetrics": {
+        "fcp": "1.3 s",
+        "lcp": "5.4 s",
+        "cls": "0.111",
+        "tbt": "10 ms",
+        "speedIndex": "1.7 s",
+        "ttfb": "Root document took 200 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "3 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 59 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 251 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 4,604 KiB"
+          "displayValue": "Est savings of 5,168 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -1490,19 +596,19 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 670 ms"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.22,
-          "displayValue": "2.2 s"
+          "displayValue": "Est savings of 660 ms"
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.31,
-          "displayValue": "3.1 s"
+          "score": 0.06,
+          "displayValue": "5.4 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.34,
+          "displayValue": "5.4 s"
         },
         {
           "id": "unsized-images",
@@ -1514,55 +620,37 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 7,743 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0.5,
-          "displayValue": "Est savings of 20 ms"
+          "displayValue": "Total size was 8,279 KiB"
         }
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "url": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:27:06.309Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "fetchedAt": "2026-10-29T11:36:34.917Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
       "scores": {
-        "performance": 66,
+        "performance": 53,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 3015.3025,
-        "lcp": 3026.08,
-        "cls": 0.3709175325144223,
-        "tbt": 213,
-        "speedIndex": 3824.5848806894196,
-        "ttfb": 294
+        "fcp": 4269.8175,
+        "lcp": 4423.6965,
+        "cls": 0.2916419511383284,
+        "tbt": 294.5,
+        "speedIndex": 4269.8175,
+        "ttfb": 192
       },
       "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "3.0 s",
-        "cls": "0.371",
-        "tbt": "210 ms",
-        "speedIndex": "3.8 s",
-        "ttfb": "Root document took 290 ms"
+        "fcp": "4.3 s",
+        "lcp": "4.4 s",
+        "cls": "0.292",
+        "tbt": "290 ms",
+        "speedIndex": "4.3 s",
+        "ttfb": "Root document took 190 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -1588,7 +676,7 @@
           "id": "layout-shifts",
           "title": "Avoid large layout shifts",
           "score": 0,
-          "displayValue": "12 layout shifts found"
+          "displayValue": "11 layout shifts found"
         },
         {
           "id": "color-contrast",
@@ -1648,25 +736,31 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 1,690 ms"
-        },
-        {
-          "id": "cumulative-layout-shift",
-          "title": "Cumulative Layout Shift",
-          "score": 0.29,
-          "displayValue": "0.371"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.3,
-          "displayValue": "9.5 s"
+          "displayValue": "Est savings of 2,840 ms"
         },
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.49,
-          "displayValue": "3.0 s"
+          "score": 0.18,
+          "displayValue": "4.3 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.31,
+          "displayValue": "9.4 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.39,
+          "displayValue": "4.4 s"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "score": 0.41,
+          "displayValue": "0.292"
         },
         {
           "id": "unsized-images",
@@ -1678,43 +772,37 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 5,410 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
+          "displayValue": "Total size was 4,885 KiB"
         }
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "url": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:27:21.456Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "fetchedAt": "2026-10-29T11:36:50.082Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/yerli-ve-milli-kalp-akciger-makinesi-57-hastada-kullanildi-5c617",
       "scores": {
-        "performance": 75,
+        "performance": 77,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1313.4515,
-        "lcp": 3130.9555,
-        "cls": 0.0985419366196868,
-        "tbt": 16,
-        "speedIndex": 1559.2176140573056,
-        "ttfb": 194
+        "fcp": 1591.3410000000001,
+        "lcp": 2355.482,
+        "cls": 0.098512898091168,
+        "tbt": 4,
+        "speedIndex": 1850.4657675120648,
+        "ttfb": 199
       },
       "displayMetrics": {
-        "fcp": "1.3 s",
-        "lcp": "3.1 s",
+        "fcp": "1.6 s",
+        "lcp": "2.4 s",
         "cls": "0.099",
-        "tbt": "20 ms",
-        "speedIndex": "1.6 s",
-        "ttfb": "Root document took 190 ms"
+        "tbt": "0 ms",
+        "speedIndex": "1.9 s",
+        "ttfb": "Root document took 200 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -1758,7 +846,7 @@
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 251 KiB"
+          "displayValue": "Est savings of 252 KiB"
         },
         {
           "id": "inspector-issues",
@@ -1773,22 +861,16 @@
           "displayValue": "1 failure reason"
         },
         {
-          "id": "font-display-insight",
-          "title": "Font display",
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
           "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "forced-reflow-insight",
-          "title": "Forced reflow",
-          "score": 0,
-          "displayValue": ""
+          "displayValue": "Est savings of 20 KiB"
         },
         {
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 4,604 KiB"
+          "displayValue": "Est savings of 6,462 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -1809,10 +891,10 @@
           "displayValue": "Est savings of 680 ms"
         },
         {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.31,
-          "displayValue": "3.1 s"
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.5,
+          "displayValue": "1.6 s"
         },
         {
           "id": "unsized-images",
@@ -1824,7 +906,7 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 7,741 KiB"
+          "displayValue": "Total size was 9,592 KiB"
         },
         {
           "id": "unminified-css",
@@ -1833,39 +915,45 @@
           "displayValue": "Est savings of 4 KiB"
         },
         {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
+          "id": "font-display-insight",
+          "title": "Font display",
           "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
+          "displayValue": "Est savings of 20 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.51,
+          "displayValue": "2.4 s"
         }
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:27:36.897Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
+      "fetchedAt": "2026-10-29T11:37:05.774Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
       "scores": {
-        "performance": 67,
+        "performance": 73,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 3024.3985,
-        "lcp": 3024.3985,
-        "cls": 0.29950327573095614,
-        "tbt": 257,
-        "speedIndex": 3972.554414847985,
-        "ttfb": 185
+        "fcp": 3521.708,
+        "lcp": 3521.708,
+        "cls": 0.12037902502622846,
+        "tbt": 291.5,
+        "speedIndex": 3815.7845254064323,
+        "ttfb": 187
       },
       "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "3.0 s",
-        "cls": "0.3",
-        "tbt": "260 ms",
-        "speedIndex": "4.0 s",
+        "fcp": "3.5 s",
+        "lcp": "3.5 s",
+        "cls": "0.12",
+        "tbt": "290 ms",
+        "speedIndex": "3.8 s",
         "ttfb": "Root document took 190 ms"
       },
       "lcpElement": "",
@@ -1943,310 +1031,6 @@
           "displayValue": ""
         },
         {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 1,700 ms"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.3,
-          "displayValue": "9.5 s"
-        },
-        {
-          "id": "cumulative-layout-shift",
-          "title": "Cumulative Layout Shift",
-          "score": 0.4,
-          "displayValue": "0.3"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.49,
-          "displayValue": "3.0 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 5,059 KiB"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:27:52.079Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
-      "scores": {
-        "performance": 74,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1714.69,
-        "lcp": 2948.8675000000003,
-        "cls": 0.08243695876956339,
-        "tbt": 0,
-        "speedIndex": 1714.69,
-        "ttfb": 185
-      },
-      "displayMetrics": {
-        "fcp": "1.7 s",
-        "lcp": "2.9 s",
-        "cls": "0.082",
-        "tbt": "0 ms",
-        "speedIndex": "1.7 s",
-        "ttfb": "Root document took 190 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 59 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 135 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0,
-          "displayValue": "Est savings of 4,609 KiB"
-        },
-        {
-          "id": "lcp-discovery-insight",
-          "title": "LCP request discovery",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 670 ms"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.35,
-          "displayValue": "2.9 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.43,
-          "displayValue": "1.7 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 7,577 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
-      "mode": "mobile",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:28:07.285Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
-      "scores": {
-        "performance": 68,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3528.771,
-        "lcp": 4259.335999999999,
-        "cls": 0.09917602985044614,
-        "tbt": 295,
-        "speedIndex": 4310.859939056082,
-        "ttfb": 196
-      },
-      "displayMetrics": {
-        "fcp": "3.5 s",
-        "lcp": "4.3 s",
-        "cls": "0.099",
-        "tbt": "300 ms",
-        "speedIndex": "4.3 s",
-        "ttfb": "Root document took 200 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "title": "Minimize main-thread work",
-          "score": 0,
-          "displayValue": "2.1 s"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 60 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 251 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
           "id": "network-dependency-tree-insight",
           "title": "Network dependency tree",
           "score": 0,
@@ -2261,8 +1045,8 @@
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.26,
-          "displayValue": "10.1 s"
+          "score": 0.27,
+          "displayValue": "10.0 s"
         },
         {
           "id": "first-contentful-paint",
@@ -2271,12 +1055,6 @@
           "displayValue": "3.5 s"
         },
         {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.43,
-          "displayValue": "4.3 s"
-        },
-        {
           "id": "unsized-images",
           "title": "Image elements do not have explicit `width` and `height`",
           "score": 0.5,
@@ -2286,344 +1064,46 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 4,964 KiB"
+          "displayValue": "Total size was 4,810 KiB"
         },
         {
           "id": "unminified-css",
           "title": "Minify CSS",
           "score": 0.5,
           "displayValue": "Est savings of 4 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 250 KiB"
         }
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:28:22.525Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
+      "fetchedAt": "2026-10-29T11:37:20.699Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-cocuk-koruma-personeline-danismanlik-tedbiri-egitimi-verildi-acd32",
       "scores": {
-        "performance": 72,
+        "performance": 74,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1441.7340000000002,
-        "lcp": 3425.6590000000006,
-        "cls": 0.10360381928309195,
-        "tbt": 2,
-        "speedIndex": 1621.349138703351,
-        "ttfb": 184
+        "fcp": 1695.116,
+        "lcp": 2930.7180000000008,
+        "cls": 0.0865525135476423,
+        "tbt": 1,
+        "speedIndex": 1758.12945089041,
+        "ttfb": 195
       },
       "displayMetrics": {
-        "fcp": "1.4 s",
-        "lcp": "3.4 s",
-        "cls": "0.104",
-        "tbt": "0 ms",
-        "speedIndex": "1.6 s",
-        "ttfb": "Root document took 180 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "layout-shifts",
-          "title": "Avoid large layout shifts",
-          "score": 0,
-          "displayValue": "2 layout shifts found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 59 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 135 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cls-culprits-insight",
-          "title": "Layout shift culprits",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0,
-          "displayValue": "Est savings of 4,799 KiB"
-        },
-        {
-          "id": "lcp-discovery-insight",
-          "title": "LCP request discovery",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 430 ms"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.25,
-          "displayValue": "3.4 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        },
-        {
-          "id": "total-byte-weight",
-          "title": "Avoid enormous network payloads",
-          "score": 0.5,
-          "displayValue": "Total size was 7,760 KiB"
-        },
-        {
-          "id": "unminified-css",
-          "title": "Minify CSS",
-          "score": 0.5,
-          "displayValue": "Est savings of 4 KiB"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
-      "mode": "mobile",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:28:37.788Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
-      "scores": {
-        "performance": 61,
-        "accessibility": 90,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 3017.3995,
-        "lcp": 3865.3284999999996,
-        "cls": 0.29950327573095614,
-        "tbt": 257,
-        "speedIndex": 3989.563912213703,
-        "ttfb": 193
-      },
-      "displayMetrics": {
-        "fcp": "3.0 s",
-        "lcp": "3.9 s",
-        "cls": "0.3",
-        "tbt": "260 ms",
-        "speedIndex": "4.0 s",
-        "ttfb": "Root document took 190 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "title": "Minimize main-thread work",
-          "score": 0,
-          "displayValue": "2.3 s"
-        },
-        {
-          "id": "layout-shifts",
-          "title": "Avoid large layout shifts",
-          "score": 0,
-          "displayValue": "11 layout shifts found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 60 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 249 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "cls-culprits-insight",
-          "title": "Layout shift culprits",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 30 ms"
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 1,700 ms"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.31,
-          "displayValue": "9.4 s"
-        },
-        {
-          "id": "cumulative-layout-shift",
-          "title": "Cumulative Layout Shift",
-          "score": 0.4,
-          "displayValue": "0.3"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.49,
-          "displayValue": "3.0 s"
-        },
-        {
-          "id": "unsized-images",
-          "title": "Image elements do not have explicit `width` and `height`",
-          "score": 0.5,
-          "displayValue": ""
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:28:52.852Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
-      "scores": {
-        "performance": 71,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1762.2915000000003,
-        "lcp": 3553.9265,
-        "cls": 0.07233706425120642,
-        "tbt": 0,
-        "speedIndex": 1762.2915000000003,
-        "ttfb": 197
-      },
-      "displayMetrics": {
-        "fcp": "1.8 s",
-        "lcp": "3.6 s",
-        "cls": "0.072",
+        "fcp": "1.7 s",
+        "lcp": "2.9 s",
+        "cls": "0.087",
         "tbt": "0 ms",
         "speedIndex": "1.8 s",
         "ttfb": "Root document took 200 ms"
@@ -2670,7 +1150,7 @@
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 251 KiB"
+          "displayValue": "Est savings of 136 KiB"
         },
         {
           "id": "inspector-issues",
@@ -2691,10 +1171,16 @@
           "displayValue": "Est savings of 30 ms"
         },
         {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 4,604 KiB"
+          "displayValue": "Est savings of 6,532 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -2712,19 +1198,19 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 680 ms"
+          "displayValue": "Est savings of 690 ms"
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.23,
-          "displayValue": "3.6 s"
+          "score": 0.35,
+          "displayValue": "2.9 s"
         },
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.4,
-          "displayValue": "1.8 s"
+          "score": 0.44,
+          "displayValue": "1.7 s"
         },
         {
           "id": "unsized-images",
@@ -2736,28 +1222,22 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 7,741 KiB"
+          "displayValue": "Total size was 9,490 KiB"
         },
         {
           "id": "unminified-css",
           "title": "Minify CSS",
           "score": 0.5,
           "displayValue": "Est savings of 4 KiB"
-        },
-        {
-          "id": "cache-insight",
-          "title": "Use efficient cache lifetimes",
-          "score": 0.5,
-          "displayValue": "Est savings of 20 KiB"
         }
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehirspor-karakopru-maci-oncesi-play-off-hattinda-b1b6e",
+      "url": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:29:08.320Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirspor-karakopru-maci-oncesi-play-off-hattinda-b1b6e",
+      "fetchedAt": "2026-10-29T11:37:36.240Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
       "scores": {
         "performance": 79,
         "accessibility": 90,
@@ -2765,20 +1245,20 @@
         "seo": 100
       },
       "metrics": {
-        "fcp": 3131.0795000000003,
-        "lcp": 3131.0795000000003,
-        "cls": 0.13065278073732128,
-        "tbt": 192,
-        "speedIndex": 3680.9580149877083,
-        "ttfb": 212
+        "fcp": 3012.2969999999996,
+        "lcp": 3012.2969999999996,
+        "cls": 0.13059966175436144,
+        "tbt": 239.99999999999955,
+        "speedIndex": 3523.1413432394206,
+        "ttfb": 189
       },
       "displayMetrics": {
-        "fcp": "3.1 s",
-        "lcp": "3.1 s",
+        "fcp": "3.0 s",
+        "lcp": "3.0 s",
         "cls": "0.131",
-        "tbt": "190 ms",
-        "speedIndex": "3.7 s",
-        "ttfb": "Root document took 210 ms"
+        "tbt": "240 ms",
+        "speedIndex": "3.5 s",
+        "ttfb": "Root document took 190 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -2870,19 +1350,19 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 1,700 ms"
+          "displayValue": "Est savings of 1,680 ms"
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.44,
-          "displayValue": "7.8 s"
+          "score": 0.45,
+          "displayValue": "7.7 s"
         },
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.45,
-          "displayValue": "3.1 s"
+          "score": 0.49,
+          "displayValue": "3.0 s"
         },
         {
           "id": "unsized-images",
@@ -2894,7 +1374,7 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 4,738 KiB"
+          "displayValue": "Total size was 4,950 KiB"
         },
         {
           "id": "unminified-css",
@@ -2905,32 +1385,32 @@
       ]
     },
     {
-      "url": "https://kirsehirmanset.com/haber/kirsehirspor-karakopru-maci-oncesi-play-off-hattinda-b1b6e",
+      "url": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-10-28T11:29:24.216Z",
-      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirspor-karakopru-maci-oncesi-play-off-hattinda-b1b6e",
+      "fetchedAt": "2026-10-29T11:37:51.335Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-ahi-evran-universitesi-ile-ataturk-universitesi-arasinda-bogep-protokolu-5af39",
       "scores": {
-        "performance": 73,
+        "performance": 67,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1709.4814999999999,
-        "lcp": 2955.1724999999997,
-        "cls": 0.1036899260796554,
-        "tbt": 1,
-        "speedIndex": 1709.4814999999999,
-        "ttfb": 197
+        "fcp": 1717.464,
+        "lcp": 3128.6614999999993,
+        "cls": 0.1543147096527679,
+        "tbt": 6,
+        "speedIndex": 1943.6647676590662,
+        "ttfb": 190
       },
       "displayMetrics": {
         "fcp": "1.7 s",
-        "lcp": "3.0 s",
-        "cls": "0.104",
-        "tbt": "0 ms",
-        "speedIndex": "1.7 s",
-        "ttfb": "Root document took 200 ms"
+        "lcp": "3.1 s",
+        "cls": "0.154",
+        "tbt": "10 ms",
+        "speedIndex": "1.9 s",
+        "ttfb": "Root document took 190 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -2950,7 +1430,7 @@
           "id": "layout-shifts",
           "title": "Avoid large layout shifts",
           "score": 0,
-          "displayValue": "4 layout shifts found"
+          "displayValue": "3 layout shifts found"
         },
         {
           "id": "color-contrast",
@@ -2980,7 +1460,597 @@
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
           "score": 0,
-          "displayValue": "Est savings of 135 KiB"
+          "displayValue": "Est savings of 251 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 6,469 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 670 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.31,
+          "displayValue": "3.1 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.43,
+          "displayValue": "1.7 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 9,597 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
+      "mode": "mobile",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:38:06.925Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
+      "scores": {
+        "performance": 71,
+        "accessibility": 90,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 3515.2315,
+        "lcp": 3515.2315,
+        "cls": 0.10825277323515914,
+        "tbt": 326.5,
+        "speedIndex": 4362.484077177023,
+        "ttfb": 200
+      },
+      "displayMetrics": {
+        "fcp": "3.5 s",
+        "lcp": "3.5 s",
+        "cls": "0.108",
+        "tbt": "330 ms",
+        "speedIndex": "4.4 s",
+        "ttfb": "Root document took 200 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.4 s"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "11 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 60 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,690 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.26,
+          "displayValue": "10.0 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.34,
+          "displayValue": "3.5 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.4,
+          "displayValue": "280 ms"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 5,411 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:38:22.701Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirde-kepenkte-sikisan-kediyi-itfaiye-kurtardi-73144",
+      "scores": {
+        "performance": 70,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1733.4610000000002,
+        "lcp": 3345.993,
+        "cls": 0.10141779091131306,
+        "tbt": 5,
+        "speedIndex": 1839.4159078454932,
+        "ttfb": 191
+      },
+      "displayMetrics": {
+        "fcp": "1.7 s",
+        "lcp": "3.3 s",
+        "cls": "0.101",
+        "tbt": "10 ms",
+        "speedIndex": "1.8 s",
+        "ttfb": "Root document took 190 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "3 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 59 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 136 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 6,458 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 650 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.26,
+          "displayValue": "3.3 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.42,
+          "displayValue": "1.7 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 9,433 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "mode": "mobile",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:38:38.288Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "scores": {
+        "performance": 67,
+        "accessibility": 90,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 3015.5945,
+        "lcp": 3015.5945,
+        "cls": 0.3490779750617957,
+        "tbt": 231,
+        "speedIndex": 3606.5755564563588,
+        "ttfb": 195
+      },
+      "displayMetrics": {
+        "fcp": "3.0 s",
+        "lcp": "3.0 s",
+        "cls": "0.349",
+        "tbt": "230 ms",
+        "speedIndex": "3.6 s",
+        "ttfb": "Root document took 200 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.1 s"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "12 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 60 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,700 ms"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "score": 0.32,
+          "displayValue": "0.349"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.44,
+          "displayValue": "7.8 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.49,
+          "displayValue": "3.0 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 5,246 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:38:53.450Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/akpinar-uyuz-hamami-yenileniyor-17-kasimda-ihale-yapilacak-195e9",
+      "scores": {
+        "performance": 71,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1861.82,
+        "lcp": 3056.6529999999993,
+        "cls": 0.07699743887854742,
+        "tbt": 4,
+        "speedIndex": 2031.9908660722913,
+        "ttfb": 187
+      },
+      "displayMetrics": {
+        "fcp": "1.9 s",
+        "lcp": "3.1 s",
+        "cls": "0.077",
+        "tbt": "0 ms",
+        "speedIndex": "2.0 s",
+        "ttfb": "Root document took 190 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
         },
         {
           "id": "inspector-issues",
@@ -2998,7 +2068,323 @@
           "id": "cache-insight",
           "title": "Use efficient cache lifetimes",
           "score": 0,
-          "displayValue": "Est savings of 43 KiB"
+          "displayValue": "Est savings of 20 KiB"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 6,458 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 680 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.32,
+          "displayValue": "3.1 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.35,
+          "displayValue": "1.9 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 7,928 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 59 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 136 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
+      "mode": "mobile",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:39:09.550Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
+      "scores": {
+        "performance": 80,
+        "accessibility": 90,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 3014.4109999999996,
+        "lcp": 3014.4109999999996,
+        "cls": 0.09917602985044614,
+        "tbt": 248.5,
+        "speedIndex": 3670.5217733551176,
+        "ttfb": 183
+      },
+      "displayMetrics": {
+        "fcp": "3.0 s",
+        "lcp": "3.0 s",
+        "cls": "0.099",
+        "tbt": "250 ms",
+        "speedIndex": "3.7 s",
+        "ttfb": "Root document took 180 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.2 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 60 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,700 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.3,
+          "displayValue": "9.5 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.49,
+          "displayValue": "3.0 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 5,059 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 252 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "displayValue": "Est savings of 20 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:39:24.715Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehirden-hacibektasa-48-kilometrelik-yunus-emre-yolu-3364a",
+      "scores": {
+        "performance": 71,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1702.4399999999998,
+        "lcp": 3129.4139999999998,
+        "cls": 0.10155098683572382,
+        "tbt": 6,
+        "speedIndex": 1911.1958997350703,
+        "ttfb": 188
+      },
+      "displayMetrics": {
+        "fcp": "1.7 s",
+        "lcp": "3.1 s",
+        "cls": "0.102",
+        "tbt": "10 ms",
+        "speedIndex": "1.9 s",
+        "ttfb": "Root document took 190 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "3 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 59 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 252 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
         },
         {
           "id": "cls-culprits-insight",
@@ -3010,7 +2396,329 @@
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 4,847 KiB"
+          "displayValue": "Est savings of 6,464 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 670 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.31,
+          "displayValue": "3.1 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.44,
+          "displayValue": "1.7 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 9,598 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
+      "mode": "mobile",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:39:40.253Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
+      "scores": {
+        "performance": 69,
+        "accessibility": 90,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 3006.1409999999996,
+        "lcp": 3015.0694999999996,
+        "cls": 0.3052253706393518,
+        "tbt": 223.5,
+        "speedIndex": 3529.2790756518557,
+        "ttfb": 193
+      },
+      "displayMetrics": {
+        "fcp": "3.0 s",
+        "lcp": "3.0 s",
+        "cls": "0.305",
+        "tbt": "220 ms",
+        "speedIndex": "3.5 s",
+        "ttfb": "Root document took 190 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.1 s"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "12 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 60 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,690 ms"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "score": 0.39,
+          "displayValue": "0.305"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.45,
+          "displayValue": "7.7 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.49,
+          "displayValue": "3.0 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:39:55.317Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-alic-depolamali-geste-ticari-uretim-basladi-19462",
+      "scores": {
+        "performance": 69,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1668.6684999999998,
+        "lcp": 3484.9555,
+        "cls": 0.10204551450449073,
+        "tbt": 7,
+        "speedIndex": 1954.9686625142049,
+        "ttfb": 219
+      },
+      "displayMetrics": {
+        "fcp": "1.7 s",
+        "lcp": "3.5 s",
+        "cls": "0.102",
+        "tbt": "10 ms",
+        "speedIndex": "2.0 s",
+        "ttfb": "Root document took 220 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "3 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 59 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 252 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "displayValue": "Est savings of 20 KiB"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 40 ms"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 6,417 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -3033,14 +2741,148 @@
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.35,
-          "displayValue": "3.0 s"
+          "score": 0.24,
+          "displayValue": "3.5 s"
         },
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.43,
+          "score": 0.46,
           "displayValue": "1.7 s"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
+      "mode": "mobile",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:40:10.966Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
+      "scores": {
+        "performance": 72,
+        "accessibility": 90,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 3512.816,
+        "lcp": 3512.816,
+        "cls": 0.15228139430119048,
+        "tbt": 202,
+        "speedIndex": 4680.409761766608,
+        "ttfb": 293
+      },
+      "displayMetrics": {
+        "fcp": "3.5 s",
+        "lcp": "3.5 s",
+        "cls": "0.152",
+        "tbt": "200 ms",
+        "speedIndex": "4.7 s",
+        "ttfb": "Root document took 290 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.1 s"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "11 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 60 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,700 ms"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.34,
+          "displayValue": "3.5 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.39,
+          "displayValue": "8.3 s"
         },
         {
           "id": "unsized-images",
@@ -3052,7 +2894,165 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 7,836 KiB"
+          "displayValue": "Total size was 5,215 KiB"
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 4 KiB"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-10-29T11:40:29.473Z",
+      "finalUrl": "https://kirsehirmanset.com/haber/kirsehir-belediyesi-bayram-programini-acikladi-4-tesis-kapali-2-nokta-ucretsiz-b197f",
+      "scores": {
+        "performance": 70,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1640.245,
+        "lcp": 3266.058000000001,
+        "cls": 0.10153249751610392,
+        "tbt": 5,
+        "speedIndex": 2105.2684063823904,
+        "ttfb": 197
+      },
+      "displayMetrics": {
+        "fcp": "1.6 s",
+        "lcp": "3.3 s",
+        "cls": "0.102",
+        "tbt": "10 ms",
+        "speedIndex": "2.1 s",
+        "ttfb": "Root document took 200 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "score": 0,
+          "displayValue": "3 layout shifts found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 59 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 136 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "score": 0,
+          "displayValue": "Est savings of 30 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 6,458 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 670 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.28,
+          "displayValue": "3.3 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.47,
+          "displayValue": "1.6 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "displayValue": ""
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "displayValue": "Total size was 9,433 KiB"
         }
       ]
     }
