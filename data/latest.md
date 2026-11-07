@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-11-06T13:03:00.225Z
+Tarih: 2026-11-07T11:50:25.265Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 54 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 11.2 s | CLS: 0.002 | TBT: 560 ms | FCP: 2.4 s | TTFB: Root document took 270 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 77 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.2 s | CLS: 0.013 | TBT: 0 ms | FCP: 1.3 s | TTFB: Root document took 200 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 59 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 13.2 s | CLS: 0.051 | TBT: 410 ms | FCP: 2.7 s | TTFB: Root document took 240 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 74 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 3.3 s | CLS: 0.006 | TBT: 10 ms | FCP: 1.6 s | TTFB: Root document took 220 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/bakan-ersoy-2026nin-ilk-9-ayinda-49-milyon-132-bin-ziyaretci-agirladik-17f4b | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/bakan-ersoy-2026nin-ilk-9-ayinda-49-milyon-132-bin-ziyaretci-agirladik-17f4b --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
