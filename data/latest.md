@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-11-13T13:15:23.976Z
+Tarih: 2026-11-14T12:18:52.646Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 46 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 5.6 s | CLS: 0 | TBT: 1,940 ms | FCP: 2.5 s | TTFB: Root document took 390 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 76 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.8 s | CLS: 0.006 | TBT: 10 ms | FCP: 1.8 s | TTFB: Root document took 380 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 58 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 8.4 s | CLS: 0 | TBT: 550 ms | FCP: 2.3 s | TTFB: Root document took 330 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 86 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.0 s | CLS: 0.013 | TBT: 0 ms | FCP: 1.3 s | TTFB: Root document took 350 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/harry-kane-tarihe-gecti-ingiltere-wembleyde-hirvatistani-2-1-maglup-etti-edb54 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/harry-kane-tarihe-gecti-ingiltere-wembleyde-hirvatistani-2-1-maglup-etti-edb54 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
