@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-11-18T14:15:34.187Z
+Tarih: 2026-11-19T14:32:41.056Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 54 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 4.5 s | CLS: 0.044 | TBT: 1,280 ms | FCP: 2.4 s | TTFB: Root document took 460 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 80 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.3 s | CLS: 0.013 | TBT: 0 ms | FCP: 1.6 s | TTFB: Root document took 450 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 57 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 12.8 s | CLS: 0 | TBT: 350 ms | FCP: 4.0 s | TTFB: Root document took 320 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 86 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.0 s | CLS: 0.005 | TBT: 10 ms | FCP: 1.3 s | TTFB: Root document took 450 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/turkiyenin-geri-donusum-modeli-doa-cop31de-ornek-gosteriliyor-80753 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/turkiyenin-geri-donusum-modeli-doa-cop31de-ornek-gosteriliyor-80753 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
