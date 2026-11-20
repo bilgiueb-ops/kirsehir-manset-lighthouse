@@ -1,7 +1,7 @@
 {
   "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-11-19T14:32:41.056Z",
+  "generatedAt": "2026-11-20T14:09:55.358Z",
   "maxUrls": 10,
   "urlsAudited": [
     "https://kirsehirmanset.com/",
@@ -20,29 +20,29 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-11-19T14:29:46.027Z",
+      "fetchedAt": "2026-11-20T14:07:03.971Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 57,
+        "performance": 50,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 3984.253,
-        "lcp": 12765.278,
-        "cls": 0,
-        "tbt": 347,
-        "speedIndex": 3984.253,
-        "ttfb": 320
+        "fcp": 2579.2819999999997,
+        "lcp": 13988.778999999999,
+        "cls": 0.05884838600827949,
+        "tbt": 763.5000000000009,
+        "speedIndex": 4280.216962660032,
+        "ttfb": 535
       },
       "displayMetrics": {
-        "fcp": "4.0 s",
-        "lcp": "12.8 s",
-        "cls": "0",
-        "tbt": "350 ms",
-        "speedIndex": "4.0 s",
-        "ttfb": "Root document took 320 ms"
+        "fcp": "2.6 s",
+        "lcp": "14.0 s",
+        "cls": "0.059",
+        "tbt": "760 ms",
+        "speedIndex": "4.3 s",
+        "ttfb": "Root document took 540 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -50,7 +50,7 @@
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
           "score": 0,
-          "displayValue": "12.8 s"
+          "displayValue": "14.0 s"
         },
         {
           "id": "errors-in-console",
@@ -68,7 +68,7 @@
           "id": "mainthread-work-breakdown",
           "title": "Minimize main-thread work",
           "score": 0,
-          "displayValue": "3.5 s"
+          "displayValue": "4.6 s"
         },
         {
           "id": "color-contrast",
@@ -116,7 +116,7 @@
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 30 ms"
+          "displayValue": "Est savings of 70 ms"
         },
         {
           "id": "forced-reflow-insight",
@@ -128,7 +128,7 @@
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 1,186 KiB"
+          "displayValue": "Est savings of 3,335 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -146,25 +146,25 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 2,820 ms"
+          "displayValue": "Est savings of 1,080 ms"
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.13,
-          "displayValue": "12.8 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.23,
-          "displayValue": "4.0 s"
+          "score": 0.03,
+          "displayValue": "19.0 s"
         },
         {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.43,
-          "displayValue": "270 ms"
+          "score": 0.13,
+          "displayValue": "440 ms"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.38,
+          "displayValue": "760 ms"
         }
       ]
     },
@@ -172,29 +172,29 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "desktop",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-11-19T14:30:02.398Z",
+      "fetchedAt": "2026-11-20T14:07:20.472Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 86,
+        "performance": 74,
         "accessibility": 94,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 1293.31,
-        "lcp": 2010.9524999999999,
-        "cls": 0.005087236702538037,
-        "tbt": 7,
-        "speedIndex": 1554.1779372850867,
-        "ttfb": 454
+        "fcp": 1627.564,
+        "lcp": 3156.361,
+        "cls": 0.005173008333549713,
+        "tbt": 5,
+        "speedIndex": 1827.9088347657816,
+        "ttfb": 372
       },
       "displayMetrics": {
-        "fcp": "1.3 s",
-        "lcp": "2.0 s",
+        "fcp": "1.6 s",
+        "lcp": "3.2 s",
         "cls": "0.005",
         "tbt": "10 ms",
-        "speedIndex": "1.6 s",
-        "ttfb": "Root document took 450 ms"
+        "speedIndex": "1.8 s",
+        "ttfb": "Root document took 370 ms"
       },
       "lcpElement": "",
       "failedAudits": [
@@ -250,7 +250,7 @@
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 50 ms"
+          "displayValue": "Est savings of 60 ms"
         },
         {
           "id": "forced-reflow-insight",
@@ -262,7 +262,7 @@
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 7,876 KiB"
+          "displayValue": "Est savings of 5,125 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -280,7 +280,19 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 700 ms"
+          "displayValue": "Est savings of 770 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.3,
+          "displayValue": "3.2 s"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.48,
+          "displayValue": "1.6 s"
         },
         {
           "id": "unsized-images",
@@ -292,7 +304,7 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 10,923 KiB"
+          "displayValue": "Total size was 8,212 KiB"
         },
         {
           "id": "unminified-css",
@@ -305,18 +317,6 @@
           "title": "Use efficient cache lifetimes",
           "score": 0.5,
           "displayValue": "Est savings of 23 KiB"
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.62,
-          "displayValue": "2.0 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.69,
-          "displayValue": "1.3 s"
         }
       ]
     }
