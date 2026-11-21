@@ -1,7 +1,7 @@
 {
   "version": 5,
   "site": "https://kirsehirmanset.com/",
-  "generatedAt": "2026-11-20T14:09:55.358Z",
+  "generatedAt": "2026-11-21T13:34:44.610Z",
   "maxUrls": 10,
   "urlsAudited": [
     "https://kirsehirmanset.com/",
@@ -20,38 +20,32 @@
       "url": "https://kirsehirmanset.com/",
       "mode": "mobile",
       "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-11-20T14:07:03.971Z",
+      "fetchedAt": "2026-11-21T13:31:58.573Z",
       "finalUrl": "https://kirsehirmanset.com/",
       "scores": {
-        "performance": 50,
+        "performance": 46,
         "accessibility": 90,
         "bestPractices": 73,
         "seo": 100
       },
       "metrics": {
-        "fcp": 2579.2819999999997,
-        "lcp": 13988.778999999999,
-        "cls": 0.05884838600827949,
-        "tbt": 763.5000000000009,
-        "speedIndex": 4280.216962660032,
-        "ttfb": 535
+        "fcp": 3085.9559999999997,
+        "lcp": 7096.531999999999,
+        "cls": 0.000950567726139942,
+        "tbt": 1134.5,
+        "speedIndex": 3943.18518597179,
+        "ttfb": 335
       },
       "displayMetrics": {
-        "fcp": "2.6 s",
-        "lcp": "14.0 s",
-        "cls": "0.059",
-        "tbt": "760 ms",
-        "speedIndex": "4.3 s",
-        "ttfb": "Root document took 540 ms"
+        "fcp": "3.1 s",
+        "lcp": "7.1 s",
+        "cls": "0.001",
+        "tbt": "1,130 ms",
+        "speedIndex": "3.9 s",
+        "ttfb": "Root document took 340 ms"
       },
       "lcpElement": "",
       "failedAudits": [
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0,
-          "displayValue": "14.0 s"
-        },
         {
           "id": "errors-in-console",
           "title": "Browser errors were logged to the console",
@@ -71,6 +65,12 @@
           "displayValue": "4.6 s"
         },
         {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "displayValue": "1.6 s"
+        },
+        {
           "id": "color-contrast",
           "title": "Background and foreground colors do not have a sufficient contrast ratio.",
           "score": 0,
@@ -85,6 +85,140 @@
         {
           "id": "target-size",
           "title": "Touch targets do not have sufficient size or spacing.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0,
+          "displayValue": "Est savings of 4 KiB"
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 52 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 137 KiB"
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "displayValue": "Est savings of 2,834 KiB"
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 1,780 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.03,
+          "displayValue": "640 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.05,
+          "displayValue": "7.1 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.06,
+          "displayValue": "15.7 s"
+        }
+      ]
+    },
+    {
+      "url": "https://kirsehirmanset.com/",
+      "mode": "desktop",
+      "lighthouseVersion": "13.4.1",
+      "fetchedAt": "2026-11-21T13:32:15.318Z",
+      "finalUrl": "https://kirsehirmanset.com/",
+      "scores": {
+        "performance": 78,
+        "accessibility": 94,
+        "bestPractices": 73,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1422.468,
+        "lcp": 2859.111,
+        "cls": 0.005095336067260535,
+        "tbt": 0,
+        "speedIndex": 1608.9674964772646,
+        "ttfb": 324
+      },
+      "displayMetrics": {
+        "fcp": "1.4 s",
+        "lcp": "2.9 s",
+        "cls": "0.005",
+        "tbt": "0 ms",
+        "speedIndex": "1.6 s",
+        "ttfb": "Root document took 320 ms"
+      },
+      "lcpElement": "",
+      "failedAudits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0,
+          "displayValue": "1 cookie found"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "displayValue": ""
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
           "score": 0,
           "displayValue": ""
         },
@@ -116,7 +250,7 @@
           "id": "font-display-insight",
           "title": "Font display",
           "score": 0,
-          "displayValue": "Est savings of 70 ms"
+          "displayValue": "Est savings of 30 ms"
         },
         {
           "id": "forced-reflow-insight",
@@ -128,7 +262,7 @@
           "id": "image-delivery-insight",
           "title": "Improve image delivery",
           "score": 0,
-          "displayValue": "Est savings of 3,335 KiB"
+          "displayValue": "Est savings of 4,728 KiB"
         },
         {
           "id": "lcp-discovery-insight",
@@ -146,153 +280,13 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 1,080 ms"
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.03,
-          "displayValue": "19.0 s"
-        },
-        {
-          "id": "max-potential-fid",
-          "title": "Max Potential First Input Delay",
-          "score": 0.13,
-          "displayValue": "440 ms"
-        },
-        {
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 0.38,
-          "displayValue": "760 ms"
-        }
-      ]
-    },
-    {
-      "url": "https://kirsehirmanset.com/",
-      "mode": "desktop",
-      "lighthouseVersion": "13.4.1",
-      "fetchedAt": "2026-11-20T14:07:20.472Z",
-      "finalUrl": "https://kirsehirmanset.com/",
-      "scores": {
-        "performance": 74,
-        "accessibility": 94,
-        "bestPractices": 73,
-        "seo": 100
-      },
-      "metrics": {
-        "fcp": 1627.564,
-        "lcp": 3156.361,
-        "cls": 0.005173008333549713,
-        "tbt": 5,
-        "speedIndex": 1827.9088347657816,
-        "ttfb": 372
-      },
-      "displayMetrics": {
-        "fcp": "1.6 s",
-        "lcp": "3.2 s",
-        "cls": "0.005",
-        "tbt": "10 ms",
-        "speedIndex": "1.8 s",
-        "ttfb": "Root document took 370 ms"
-      },
-      "lcpElement": "",
-      "failedAudits": [
-        {
-          "id": "errors-in-console",
-          "title": "Browser errors were logged to the console",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "third-party-cookies",
-          "title": "Uses third-party cookies",
-          "score": 0,
-          "displayValue": "1 cookie found"
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0,
-          "displayValue": "Est savings of 52 KiB"
-        },
-        {
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 137 KiB"
-        },
-        {
-          "id": "inspector-issues",
-          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "bf-cache",
-          "title": "Page prevented back/forward cache restoration",
-          "score": 0,
-          "displayValue": "1 failure reason"
-        },
-        {
-          "id": "font-display-insight",
-          "title": "Font display",
-          "score": 0,
-          "displayValue": "Est savings of 60 ms"
-        },
-        {
-          "id": "forced-reflow-insight",
-          "title": "Forced reflow",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0,
-          "displayValue": "Est savings of 5,125 KiB"
-        },
-        {
-          "id": "lcp-discovery-insight",
-          "title": "LCP request discovery",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": ""
-        },
-        {
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 770 ms"
+          "displayValue": "Est savings of 700 ms"
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.3,
-          "displayValue": "3.2 s"
-        },
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.48,
-          "displayValue": "1.6 s"
+          "score": 0.37,
+          "displayValue": "2.9 s"
         },
         {
           "id": "unsized-images",
@@ -304,7 +298,7 @@
           "id": "total-byte-weight",
           "title": "Avoid enormous network payloads",
           "score": 0.5,
-          "displayValue": "Total size was 8,212 KiB"
+          "displayValue": "Total size was 8,031 KiB"
         },
         {
           "id": "unminified-css",
@@ -317,6 +311,12 @@
           "title": "Use efficient cache lifetimes",
           "score": 0.5,
           "displayValue": "Est savings of 23 KiB"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.61,
+          "displayValue": "1.4 s"
         }
       ]
     }
