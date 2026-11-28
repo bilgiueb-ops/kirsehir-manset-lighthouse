@@ -1,13 +1,13 @@
 # Kırşehir Manşet Lighthouse
 
 Site: https://kirsehirmanset.com/
-Tarih: 2026-11-27T15:15:50.691Z
+Tarih: 2026-11-28T14:20:50.690Z
 Taranan URL: 10
 Başarılı test: 2
 Hata: 18
 
-MOBILE | https://kirsehirmanset.com/ | Performance: 59 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 8.9 s | CLS: 0.041 | TBT: 300 ms | FCP: 4.0 s | TTFB: Root document took 360 ms | LCP Element: 
-DESKTOP | https://kirsehirmanset.com/ | Performance: 76 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.9 s | CLS: 0.013 | TBT: 10 ms | FCP: 1.7 s | TTFB: Root document took 320 ms | LCP Element: 
+MOBILE | https://kirsehirmanset.com/ | Performance: 44 | SEO: 100 | Accessibility: 90 | Best Practices: 73 | LCP: 5.0 s | CLS: 0 | TBT: 1,580 ms | FCP: 4.1 s | TTFB: Root document took 370 ms | LCP Element: 
+DESKTOP | https://kirsehirmanset.com/ | Performance: 77 | SEO: 100 | Accessibility: 94 | Best Practices: 73 | LCP: 2.1 s | CLS: 0.013 | TBT: 0 ms | FCP: 1.4 s | TTFB: Root document took 310 ms | LCP Element: 
 
 ## Hatalar
 mobile | https://kirsehirmanset.com/haber/okan-buruk-ile-vincenzo-italiano-ilk-kez-resm-macta-rakip-olacak-derbi-oncesi-dikkat-ceken-detay-c2f73 | Command failed: npx lighthouse@13.4.1 https://kirsehirmanset.com/haber/okan-buruk-ile-vincenzo-italiano-ilk-kez-resm-macta-rakip-olacak-derbi-oncesi-dikkat-ceken-detay-c2f73 --quiet --output=json --output-path=/home/runner/work/kirsehir-manset-lighthouse/kirsehir-manset-lighthouse/data/reports/02-mobile.json --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo
